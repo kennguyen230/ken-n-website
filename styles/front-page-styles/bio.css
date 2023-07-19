@@ -1,0 +1,50 @@
+.bio-container {
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.bio-content {
+    flex: 1;
+    margin-left: 50px;
+    /* background-color: blue; */
+}
+
+.bio-profile-picture {
+    width: 350px;
+    margin-left: 50px;
+    /* background-color: red; */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.bio-icon {
+    width: 60px;
+    border-radius: 50px;
+}
+
+.bio-title {
+    font-size: 42px;
+    font-weight: bold;
+    width: 425px;
+}
+
+.bio-description {
+    color: gray;
+    width: 475px;
+    line-height: 25px;
+}
+
+.bio-pic {
+    width: 300px;
+    border-radius: 50px;
+}
+
+.social-links-icon {
+    width: 30px;
+    border-radius: 15px;
+}

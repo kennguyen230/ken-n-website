@@ -1,0 +1,14 @@
+body {
+    margin-bottom: 3000px;
+    /* background-color: #FAFAFA; */
+    background-color: gray;
+    /* background-color: black; */
+}
+
+.body {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    padding: 50px;
+}
+
