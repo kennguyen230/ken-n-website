@@ -1,0 +1,48 @@
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 65px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.project {
+    text-decoration: none;
+    padding: 25px 15px 25px 15px;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.project:hover {
+    background-color: #f1f1f1;
+    /* background-color: red; */
+}
+
+.project-icon {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.project-description {
+    color: rgb(148, 148, 148);
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.project-link-icon {
+    width: 20px;
+    margin-right: 20px;
+}

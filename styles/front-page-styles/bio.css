@@ -1,19 +1,19 @@
 .bio-container {
     display: flex;
     align-items: center;
-    /* background-color: green; */
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .bio-content {
     flex: 1;
     margin-left: 50px;
-    /* background-color: blue; */
 }
 
 .bio-profile-picture {
-    width: 350px;
-    margin-left: 50px;
-    /* background-color: red; */
+    /* width: 350px;
+    margin-left: 50px; */
+    margin-right: 50px;
 }
 
 .logo-container {
@@ -23,20 +23,23 @@
 }
 
 .bio-icon {
-    width: 60px;
+    width: 80px;
     border-radius: 50px;
+    margin-bottom: 30px;
 }
 
 .bio-title {
     font-size: 42px;
     font-weight: bold;
     width: 425px;
+    margin-bottom: 30px;
 }
 
 .bio-description {
     color: gray;
     width: 475px;
     line-height: 25px;
+    margin-bottom: 30px;
 }
 
 .bio-pic {
