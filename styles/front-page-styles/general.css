@@ -1,5 +1,5 @@
 body {
-    margin-bottom: 3000px;
+    /* margin-bottom: 3000px; */
     background-color: #FAFAFA;
     /* background-color: gray; */
     /* background-color: black; */
@@ -12,6 +12,8 @@ body {
     max-width: 1000px;
     background-color: white;
     padding: 50px;
-    
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
 }
 
