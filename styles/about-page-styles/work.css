@@ -1,29 +1,43 @@
-.work-container {
-    border-style:solid;
-    border-width: 20ppx;
-    border-color: #f4f4f5;
-    /* border-color: green; */
-    border-radius: 20px;
-
-    width: 400px;
-    padding: 30px 30px 5px;
+.about-me-container {
+    display: flex;
+    align-items: center;
     margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
 }
 
-.work-container p {
+.work-container, .skills-container, .education-container {
+    border-style:solid;
+    border-width: 2px;
+    border-color: #f4f4f5;
+    border-radius: 20px;
+    width: 460px;
+    height: 200px;
+    padding: 30px 30px 5px;
+}
+
+.work-container {
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    height: 475px;
+}
+
+.work-container p, .skills-container p, .education-container p {
     display: inline-block;
     margin: 0;
     padding: 0;
 }
 
-.work-title {
+.work-title, .skills-title, .education-title {
     display: flex;
     align-items: center;
     color: rgb(46, 46, 46);
     margin-bottom: 40px;
 }
 
-.work-title-icon {
+.work-title-icon, .skills-title-icon, .education-title-icon {
     width: 20px;
     margin-right: 10px;
 }
