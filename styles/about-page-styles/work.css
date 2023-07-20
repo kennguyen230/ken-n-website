@@ -11,7 +11,7 @@
     border-width: 2px;
     border-color: #f4f4f5;
     border-radius: 20px;
-    width: 460px;
+    width: 425px;
     height: 200px;
     padding: 30px 30px 5px;
 }
@@ -72,6 +72,6 @@
 }
 
 .job-role, .job-timeline {
-    color: gray;
+    color: rgb(148, 148, 148);
     font-size: 13px;
 }
