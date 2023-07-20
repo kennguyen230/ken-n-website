@@ -2,6 +2,7 @@ body {
     background-color: #FAFAFA;
     padding: 0;
     margin-top: 0;
+    font-family: 'Heebo', sans-serif;
 }
 
 .body {
@@ -12,5 +13,13 @@ body {
     border-bottom-style: solid;
     border-bottom-color: gray;
     border-bottom-width: 1px;
+    font-family: 'Heebo', sans-serif;
 }
 
+p {
+    font-family: 'Heebo', sans-serif;
+}
+
+a {
+    font-family: 'Heebo', sans-serif;
+}

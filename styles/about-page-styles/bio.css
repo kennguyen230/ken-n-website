@@ -27,23 +27,30 @@
 }
 
 .bio-title {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: bold;
-    width: 500px;
+    width: 550px;
     margin-bottom: 30px;
+    color: rgb(51, 51, 51);
+    line-height: 55px;
 }
 
 .bio-description {
-    color: rgb(148, 148, 148);
+    color: rgb(114, 114, 114);
     width: 500px;
     line-height: 25px;
     margin-bottom: 30px;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 350;
 }
 
 .bio-pic {
-    width: 300px;
+    width: 350px;
+    height: 335px;
+    max-width: 100%;
+    object-fit:cover;
     border-radius: 50px;
+    transform: rotate(4deg);
 }
 
 .social-links {
@@ -51,17 +58,24 @@
     align-items: center;
 }
 
-.social-links .social-links-icon-email {
-    width: 50px;
-    margin-right: 10px;
+.social-links .linkedin {
+    width: 20px;
+    margin-right: 17px;
 }
 
-.social-links .social-links-icon-linkedin {
+.social-links .github {
     width: 30px;
-    margin-right: 15px;
+    margin-right: 12px;
+    opacity: 0.8;
 }
 
-.social-links-icon {
+.social-links .email {
     width: 40px;
-    margin-right: 10px;
+    margin-right: 12px;
+    opacity: 0.6;
+}
+
+.social-links .ig {
+    width: 30px;
+    opacity: 0.7;
 }
