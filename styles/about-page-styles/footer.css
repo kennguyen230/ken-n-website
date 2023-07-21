@@ -20,3 +20,7 @@ footer {
     color: rgb(97, 97, 97);
     font-size: 14px;
 }
+
+.footer-links:hover {
+    color: rgb(9,121,105);
+}

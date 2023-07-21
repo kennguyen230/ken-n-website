@@ -17,11 +17,12 @@
 }
 
 .work-container {
+    height: 300px;
     margin-bottom: 30px;
 }
 
 .skills-container {
-    height: 475px;
+    height: 572px;
 }
 
 .work-container p, .skills-container p, .education-container p {
@@ -49,7 +50,8 @@
 }
 
 .job-icon {
-    width: 40px;
+    width: 45px;
+    /* object-fit: fit; */
     border-radius: 20px;
 }
 

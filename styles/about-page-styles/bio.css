@@ -22,8 +22,14 @@
 
 .bio-icon {
     width: 80px;
-    border-radius: 50px;
-    margin-bottom: 30px;
+    /* border-radius: 50px; */
+    margin-bottom: -15px;
+}
+
+.bio-icon2 {
+    width: 35px;
+    margin-bottom: -55px;
+    margin-left: 40px;
 }
 
 .bio-title {
@@ -59,23 +65,33 @@
 }
 
 .social-links .linkedin {
-    width: 20px;
+    width: 22px;
     margin-right: 17px;
+    opacity: 0.8;
+    transition: opacity 0.15s;
 }
 
 .social-links .github {
     width: 30px;
     margin-right: 12px;
-    opacity: 0.8;
+    opacity: 0.7;
+    transition: opacity 0.15s;
 }
 
 .social-links .email {
-    width: 40px;
+    width: 42px;
     margin-right: 12px;
     opacity: 0.6;
+    transition: opacity 0.15s;
 }
 
 .social-links .ig {
-    width: 30px;
+    width: 34px;
     opacity: 0.7;
+    transition: opacity 0.15s;
+}
+
+.social-links .linkedin:hover, .social-links .github:hover,
+.social-links .email:hover, .social-links .ig:hover {
+    opacity: 1;
 }

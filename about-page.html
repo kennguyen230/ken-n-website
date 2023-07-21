@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/about-page-styles/navbar.css">
     <link rel="stylesheet" href="styles/about-page-styles/projects.css">
     <link rel="stylesheet" href="styles/about-page-styles/footer.css">
-    <link rel="stylesheet" href="styles/about-page-styles/work.css">
+    <link rel="stylesheet" href="styles/about-page-styles/qualifications.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,147 +38,129 @@
             <div class="nav-container">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="about-page.html">About</a></li>
-                        <li><a href="projects-page.html">Projects</a></li>
-                        <li><a href="contact-page.html">Contact</a></li>
+                        <li><a class="active" href="about-page.html">About</a></li>
+                        <li><a class="tab" href="projects-page.html">Projects</a></li>
+                        <li><a class="tab" href="contact-page.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-
             <!-- Bio -->
-            <div>
-                <div class="bio-container">
-                    <div class="bio-content">
-                        <div class="logo-container">
-                            <img class="bio-icon" src="icons/logo.png">
-                        </div>
-                        <div class="bio-title">
-                            Front-end web developer & mobile developer.
-                        </div>
-                        <div class="bio-description">
-                            <!-- TODO: Edit bio -->
-                            <p>
-                                Hey there! My name is Ken and I'm a programmer and life long learner.
-                                I have a passion for designing and building scalable web and mobile applications.
-                                I fell in love with coding due to its subtle artistry and the ability to create
-                                anything. And I've stuck with it all these years after growing an appreciation for 
-                                the learning process.
-                            </p>
-                            <p>
-                                Some personal hobbies of mine include cooking and food photography, bike riding, and
-                                vertical training. Feel free to reach out thru the links below or send inquiries using
-                                the contact page.
-                            </p>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/ken-nguyen-56bb2a218/">
-                                <img class="linkedin" src="icons/linkedin.png">
-                            </a>
-                            <a href="https://github.com/kennguyen230">
-                                <img class="github" src="icons/github.png">
-                            </a>
-                            <a href="contact-page.html">
-                                <img class="email" src="icons/email.png">
-                            </a>
-                            <a href="https://www.instagram.com/kenscookingjournal/">
-                                <img class="ig" src="icons/ig.png">
-                            </a>
-                        </div>
+            <div class="bio-container">
+                <div class="bio-content">
+                    <div class="logo-container">
+                        <img class="bio-icon" src="icons/calicoicon.png">
+                        <img class="bio-icon2" src="icons/tennisball.png">
                     </div>
-                    <div class="bio-profile-picture">
-                        <img class="bio-pic" src="images/Ken-bio-pic.jpg" class="bio-picture">
+                    <div class="bio-title">
+                        Front-end web developer & mobile developer.
+                    </div>
+                    <div class="bio-description">
+                        <!-- TODO: Refine bio -->
+                        <p>
+                            Hey there! My name is Ken and I'm a programmer and life long learner.
+                            I have a passion for designing and building scalable web and mobile applications.
+                            I fell in love with coding due to its subtle artistry and the ability to create
+                            anything. And I've stuck with it all these years after growing an appreciation for
+                            the learning process.
+                        </p>
+                        <p>
+                            Some personal hobbies of mine include cooking and food photography, bike riding, and
+                            vertical training. Feel free to reach out thru the links below or send inquiries using
+                            the contact page.
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ken-nguyen-56bb2a218/">
+                            <img class="linkedin" src="icons/linkedin.png">
+                        </a>
+                        <a href="https://github.com/kennguyen230">
+                            <img class="github" src="icons/github.png">
+                        </a>
+                        <a href="contact-page.html">
+                            <img class="email" src="icons/email.png">
+                        </a>
+                        <a href="https://www.instagram.com/kenscookingjournal/">
+                            <img class="ig" src="icons/ig.png">
+                        </a>
                     </div>
                 </div>
+                <div class="bio-profile-picture">
+                    <img class="bio-pic" src="images/Ken-bio-pic.jpg" class="bio-picture">
+                </div>
             </div>
-
             <!-- Projects -->
             <div class="projects-container">
                 <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
-                    <div class="projects-box">
-                        <img class="project-icon" src="icons/logo.png">
-                        <div class="project-title">
-                            Project 1
-                        </div>
-                        <div class="project-description">
-                            Lorem ipsum dolor sit amet. Et incidunt voluptataem ex tempore repellendus qui dicta nemo
-                            sit deleniti minima.
-                        </div>
-                        <div class="project-link">
-                            <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
-                            View Project
-                        </div>
+                    <img class="project-icon" src="icons/tunnelman.png">
+                    <div class="project-title">
+                        Tunnelman Game
+                    </div>
+                    <div class="project-description">
+                        A recreation of an 80s arcade game known as Digdug. Created using OpenGL and written in C++.
+                    </div>
+                    <div class="project-link">
+                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        Learn more
                     </div>
                 </a>
                 <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
-                    <div class="projects-box">
-                        <img class="project-icon" src="icons/logo.png">
-                        <div class="project-title">
-                            Project 1
-                        </div>
-                        <div class="project-description">
-                            Lorem ipsum dolor sit amet. Et incidunt voluptataem ex tempore repellendus qui dicta nemo
-                            sit deleniti minima.
-                        </div>
-                        <div class="project-link">
-                            <img class="project-link-icon"
-                                src="icons/png-clipart-black-envelope-icon-advanced-case-management-envelope-computer-icons-icon-design-envelope-mail-miscellaneous-angle.png">
-                            View Project
-                        </div>
+                    <img class="project-icon" src="icons/sdzoo.png">
+                    <div class="project-title">
+                        San Diego Zoo Navigation App
+                    </div>
+                    <div class="project-description">
+                        An Android app that allows users to navigate thru the San Diego Zoo. Written in Java.
+                    </div>
+                    <div class="project-link">
+                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        Learn more
                     </div>
                 </a>
                 <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
-                    <div class="projects-box">
-                        <img class="project-icon" src="icons/logo.png">
-                        <div class="project-title">
-                            Project 1
-                        </div>
-                        <div class="project-description">
-                            Lorem ipsum dolor sit amet. Et incidunt voluptataem ex tempore repellendus qui dicta nemo
-                            sit deleniti minima.
-                        </div>
-                        <div class="project-link">
-                            <img class="project-link-icon"
-                                src="icons/png-clipart-black-envelope-icon-advanced-case-management-envelope-computer-icons-icon-design-envelope-mail-miscellaneous-angle.png">
-                            View Project
-                        </div>
+                    <img class="project-icon" src="icons/appstore.svg">
+                    <div class="project-title">
+                        Code Brown
+                    </div>
+                    <div class="project-description">
+                        Counter app inspired by a New Years resolution to track bowel movements. Written in Swift
+                        and SwiftUI.
+                    </div>
+                    <div class="project-link">
+                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        Learn more
                     </div>
                 </a>
                 <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
-                    <div class="projects-box">
-                        <img class="project-icon" src="icons/logo.png">
-                        <div class="project-title">
-                            Project 1
-                        </div>
-                        <div class="project-description">
-                            Lorem ipsum dolor sit amet. Et incidunt voluptataem ex tempore repellendus qui dicta nemo
-                            sit deleniti minima.
-                        </div>
-                        <div class="project-link">
-                            <img class="project-link-icon"
-                                src="icons/png-clipart-black-envelope-icon-advanced-case-management-envelope-computer-icons-icon-design-envelope-mail-miscellaneous-angle.png">
-                            View Project
-                        </div>
+                    <img class="project-icon" src="icons/covid19.png">
+                    <div class="project-title">
+                        Covid-19 Lockdown Report
+                    </div>
+                    <div class="project-description">
+                        A disection and visualization of data on mental health trends post Covid-19 lockdown. Created
+                        using Python.
+                    </div>
+                    <div class="project-link">
+                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        Learn more
                     </div>
                 </a>
                 <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
-                    <div class="projects-box">
-                        <img class="project-icon" src="icons/logo.png">
-                        <div class="project-title">
-                            Project 1
-                        </div>
-                        <div class="project-description">
-                            Lorem ipsum dolor sit amet. Et incidunt voluptataem ex tempore repellendus qui dicta nemo
-                            sit deleniti minima.
-                        </div>
-                        <div class="project-link">
-                            <img class="project-link-icon"
-                                src="icons/png-clipart-black-envelope-icon-advanced-case-management-envelope-computer-icons-icon-design-envelope-mail-miscellaneous-angle.png">
-                            View Project
-                        </div>
+
+                    <img class="project-icon" src="icons/youtubeicon.png">
+                    <div class="project-title">
+                        Youtube Homepage Recreation
+                    </div>
+                    <div class="project-description">
+                        A faithful recreation of the Youtube front page using HTML and CSS. The website is scalable and
+                        responsive.
+                    </div>
+                    <div class="project-link">
+                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        Learn more
                     </div>
                 </a>
             </div>
-
+            <!-- Bottom portion -->
             <div class="about-me-container">
                 <div>
                     <!-- Work experience -->
@@ -187,61 +169,65 @@
                             <img class="work-title-icon" src="icons/business_center_FILL0_wght200_GRAD0_opsz20.svg">
                             <p>Work</p>
                         </div>
-
                         <div class="job">
-                            <img class="job-icon" src="icons/logo.png">
+                            <img class="job-icon" src="icons/ng2.png">
                             <div class="job-content">
-                                <p class="job-title">Facebook</p>
+                                <p class="job-title">Northrop Grumman</p>
                                 <div class="job-description">
-                                    <p class="job-role">Software Engineer</p>
-                                    <p class="job-timeline">2019-Present</p>
+                                    <p class="job-role">Associate Software Engineer</p>
+                                    <p class="job-timeline">2023 - Present</p>
                                 </div>
                             </div>
                         </div>
-
                         <div class="job">
-                            <img class="job-icon" src="icons/logo.png">
+                            <img class="job-icon" src="icons/c2.png">
                             <div class="job-content">
-                                <p class="job-title">Facebook</p>
+                                <p class="job-title">C2 Education</p>
                                 <div class="job-description">
-                                    <p class="job-role">Software Engineer</p>
-                                    <p class="job-timeline">2019-Present</p>
+                                    <p class="job-role">Computer Science Tutor</p>
+                                    <p class="job-timeline">2022 - 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <img class="job-icon" src="icons/me.png">
+                            <div class="job-content">
+                                <p class="job-title">M.E. Engineers</p>
+                                <div class="job-description">
+                                    <p class="job-role">Intern</p>
+                                    <p class="job-timeline">2017 - 2017</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Education -->
                     <div class="education-container">
                         <div class="education-title">
                             <img class="education-title-icon" src="icons/school_FILL0_wght200_GRAD0_opsz20.svg">
                             <p>Education</p>
                         </div>
-
                         <div class="job">
-                            <img class="job-icon" src="icons/logo.png">
+                            <img class="job-icon" src="icons/ucsd.png">
                             <div class="job-content">
-                                <p class="job-title">Facebook</p>
+                                <p class="job-title">University of California, San Diego</p>
                                 <div class="job-description">
-                                    <p class="job-role">Software Engineer</p>
-                                    <p class="job-timeline">2019-Present</p>
+                                    <p class="job-role">B.A. Mathematics-Computer Science</p>
+                                    <p class="job-timeline">2020-2022</p>
                                 </div>
                             </div>
                         </div>
-
                         <div class="job">
-                            <img class="job-icon" src="icons/logo.png">
+                            <img class="job-icon" src="icons/ecc.png">
                             <div class="job-content">
-                                <p class="job-title">Facebook</p>
+                                <p class="job-title">El Camino College</p>
                                 <div class="job-description">
-                                    <p class="job-role">Software Engineer</p>
-                                    <p class="job-timeline">2019-Present</p>
+                                    <p class="job-role">A.S. Computer Science</p>
+                                    <p class="job-timeline">2017-2020</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div>
                     <div>
                         <div class="skills-container">
@@ -286,5 +272,4 @@
         </div>
     </footer>
 </body>
-
 </html>
