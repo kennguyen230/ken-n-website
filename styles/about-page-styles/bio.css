@@ -15,21 +15,52 @@
 }
 
 .logo-container {
-    display: flex;
+    /* display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: center; */
+    position: relative;
 }
 
+/* cat */
 .bio-icon {
-    width: 80px;
-    /* border-radius: 50px; */
-    margin-bottom: -15px;
+    position: absolute;
+    width: 58px;
+    top: -35px;
+    left: 115px;
+    /* margin-bottom: -60px; */
+    /* margin-left: 15px; */
 }
 
+/* tennis ball */
 .bio-icon2 {
-    width: 35px;
-    margin-bottom: -55px;
-    margin-left: 40px;
+    position: absolute;
+    width: 30px;
+    left: 210px;
+    /* margin-bottom: -90px; */
+    /* margin-left: 40px; */
+}
+
+/* cat tower */
+.bio-icon3 {
+    position: absolute;
+    width: 90px;
+    top: -75px;
+    left: 0px;
+    transform: rotate(8deg);
+    /* margin-bottom: -15px; */
+    /* transform: rotate(10deg) */
+    /* border-style: solid; */
+}
+
+/* grey cat */
+.bio-icon4 {
+    position: absolute;
+    width: 70px;
+    top: -115px;
+    left: 10px;
+    transform: rotate(10deg);
+    /* margin-bottom: -200px; */
+    /* margin-left: 30px; */
 }
 
 .bio-title {
@@ -48,6 +79,10 @@
     margin-bottom: 30px;
     font-size: 16px;
     font-weight: 350;
+}
+
+.bio-bold {
+    font-weight: bold;
 }
 
 .bio-pic {
