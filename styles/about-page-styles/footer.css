@@ -4,6 +4,7 @@ footer {
     background-color: white;
     padding-top: 40px;
     padding-bottom: 30px;
+    position: relative;
 }
 
 .footer-container {
@@ -23,4 +24,12 @@ footer {
 
 .footer-links:hover {
     color: rgb(9,121,105);
+}
+
+.sleeping-cat {
+    position: absolute;
+    width: 75px;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
 }

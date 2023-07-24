@@ -15,14 +15,11 @@
 }
 
 .logo-container {
-    /* display: flex;
-    justify-content: left;
-    align-items: center; */
     position: relative;
 }
 
 /* cat */
-.bio-icon {
+.calico {
     position: absolute;
     width: 58px;
     top: -35px;
@@ -32,7 +29,7 @@
 }
 
 /* tennis ball */
-.bio-icon2 {
+.tennis-ball {
     position: absolute;
     width: 30px;
     left: 210px;
@@ -41,7 +38,7 @@
 }
 
 /* cat tower */
-.bio-icon3 {
+.cat-tower {
     position: absolute;
     width: 90px;
     top: -75px;
@@ -53,7 +50,7 @@
 }
 
 /* grey cat */
-.bio-icon4 {
+.grey-cat {
     position: absolute;
     width: 70px;
     top: -115px;

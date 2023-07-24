@@ -77,3 +77,21 @@
     color: rgb(148, 148, 148);
     font-size: 13px;
 }
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.skill-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: fit;
+    /* border-radius: 10px; */
+    margin-right: 10px;
+}
+
+.skill-title {
+    font-size: 14px;
+}
