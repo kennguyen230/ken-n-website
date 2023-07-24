@@ -23,3 +23,7 @@ p {
 a {
     font-family: 'Heebo', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}

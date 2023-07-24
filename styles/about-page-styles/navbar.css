@@ -17,6 +17,11 @@
     border-radius: 40px;
 
     background-color: white;
+    transition: box-shadow 0.15s;
+}
+
+.navbar:hover {
+    box-shadow: 4px 4px 30px rgba(0,0,0,.1);
 }
 
 .navbar ul {

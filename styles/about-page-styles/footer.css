@@ -23,7 +23,12 @@ footer {
 }
 
 .footer-links:hover {
-    color: rgb(9,121,105);
+    color: rgb(9, 121, 105);
+}
+
+.back-top-button {
+    text-decoration: none;
+    color: black;
 }
 
 .sleeping-cat {
@@ -32,4 +37,21 @@ footer {
     right: 0px;
     bottom: 0px;
     cursor: pointer;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    right: 22px;
+    bottom: 47px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.back-top-button:hover .material-symbols-outlined{
+    opacity: 1;
 }
