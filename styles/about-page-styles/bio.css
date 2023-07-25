@@ -3,15 +3,9 @@
     align-items: center;
     margin-top: 80px;
     margin-bottom: 100px;
-}
-
-.bio-content {
-    flex: 1;
     margin-left: 50px;
-}
-
-.bio-profile-picture {
     margin-right: 50px;
+    justify-content: space-between;
 }
 
 .logo-container {
@@ -74,17 +68,33 @@
     font-weight: 350;
 }
 
-.bio-bold {
-    font-weight: bold;
+.bio-pic-container {
+    position: relative;
+    width: 350px;
+    height: 335px;
 }
 
 .bio-pic {
     width: 350px;
     height: 335px;
     max-width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 50px;
-    transform: rotate(4deg);
+    transform: rotate(3deg);
+    position: absolute;
+    z-index: 2;
+}
+
+.bio-pic-bg {
+    width: 350px;
+    height: 335px;
+    max-width: 100%;
+    border-radius: 50px;
+    background-color: rgb(148, 148, 148);
+    position: absolute;
+    transform: rotate(-2deg);
+    /* left: -10px;
+    top: -11px; */
 }
 
 .social-links {
@@ -119,7 +129,9 @@
     transition: opacity 0.15s;
 }
 
-.social-links .linkedin:hover, .social-links .github:hover,
-.social-links .email:hover, .social-links .ig:hover {
+.social-links .linkedin:hover,
+.social-links .github:hover,
+.social-links .email:hover,
+.social-links .ig:hover {
     opacity: 1;
 }

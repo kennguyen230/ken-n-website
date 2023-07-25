@@ -1,0 +1,29 @@
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.intro-title {
+    font-size: 47px;
+    font-weight: bold;
+    width: 575px;
+    color: rgb(51, 51, 51);
+    line-height: 65px;
+    
+}
+
+.intro-description {
+    color: rgb(114, 114, 114);
+    width: 500px;
+    line-height: 27px;
+    font-size: 15px;
+    font-weight: 350;
+    
+    
+}
+
