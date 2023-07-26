@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles/projects-page-styles/intro-section.css">
     <link rel="stylesheet" href="styles/about-page-styles/projects.css">
     <link rel="stylesheet" href="styles/projects-page-styles/projects.css">
+    <link rel="stylesheet" href="styles/projects-page-styles/project-sections.css">
+
+    <!-- <script defer src="vanilla-tilt.js"></script> -->
 
 </head>
 
@@ -30,7 +33,7 @@
 
             <!-- Page intro -->
             <div class="intro-container">
-                <p class="intro-title">
+                <p class="intro-title" data-tilt>
                     A collection of things I've put my time into
                 </p>
                 <p class="intro-description">
@@ -58,7 +61,7 @@
                         Learn more
                     </div>
                 </a>
-                <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
+                <a class="project" href="#sdzoo-section">
                     <img class="project-icon" src="icons/sdzoo.png">
                     <div class="project-title">
                         San Diego Zoo Navigation App
@@ -117,15 +120,41 @@
             </div>
             <hr>
         </div>
-        <section id="tunnelman-section">
-            <div class="project-section">
-                Hello
-            </div>
-        </section>
+        <div class="project-info-container">
+            <section id="tunnelman-section">
+                <div class="tunnelman">
+                    <div class="project-section-title fadeInTop">Tunnelman Game</div>
+                    <hr class="line">
+                    <div class="project-section-info">
+                        <div class="outer-gif-card fadeInLeft">
+                            <div class="inner-gif-card" data-tilt>
+                                <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif" alt="funny GIF">
+                            </div>
+                        </div>
+                        <div class="outer-info-card animated fadeInRight">
+                            <div class="inner-info-card">
+                                <div class="project-sec-desc">
+                                    Hello
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sdzoo-section">
+                <div class="sdzoo">
+                    <div>
+                        Tunnel
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </main>
     <footer>
 
     </footer>
+    <script type="module" src="node_modules\vanilla-tilt\src\vanilla-tilt.js"></script>
 </body>
 
 </html>
