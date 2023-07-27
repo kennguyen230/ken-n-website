@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="styles/about-page-styles/projects.css">
     <link rel="stylesheet" href="styles/projects-page-styles/projects.css">
     <link rel="stylesheet" href="styles/projects-page-styles/project-sections.css">
+    <link rel="stylesheet" href="styles/projects-page-styles/project-section-animations.css">
 
-    <!-- <script defer src="vanilla-tilt.js"></script> -->
+    <script src="js/project-page.js" defer></script>
 
 </head>
 
@@ -33,16 +34,14 @@
 
             <!-- Page intro -->
             <div class="intro-container">
-                <p class="intro-title" data-tilt>
+                <p class="intro-title">
                     A collection of things I've put my time into
                 </p>
                 <p class="intro-description">
                     This page has a selection of projects I've worked on over the years. These projects range
                     from webpage recreations, to minigames, to iOS and Android apps. Every project was done with a
-                    purpose
-                    and contributes to my life-long learning journey. I've included demos and a description of every
-                    project listed
-                    as well as the tech stack used.
+                    purpose and contributes to my life-long learning journey. <span style="font-weight:bold">Click on a
+                        project below to learn more.</span>
                 </p>
             </div>
 
@@ -74,7 +73,7 @@
                         Learn more
                     </div>
                 </a>
-                <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
+                <a class="project" href="#codebrown-section">
                     <img class="project-icon" src="icons/appstore.svg">
                     <div class="project-title">
                         Code Brown
@@ -88,7 +87,7 @@
                         Learn more
                     </div>
                 </a>
-                <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
+                <a class="project" href="#covid19-section">
                     <img class="project-icon" src="icons/covid19.png">
                     <div class="project-title">
                         Covid-19 Lockdown Report
@@ -102,7 +101,7 @@
                         Learn more
                     </div>
                 </a>
-                <a class="project" href="https://github.com/kennguyen230/san-diego-zoo">
+                <a class="project" href="#youtube-section">
 
                     <img class="project-icon" src="icons/youtubeicon.png">
                     <div class="project-title">
@@ -122,45 +121,147 @@
         </div>
         <div class="project-info-container">
             <section id="tunnelman-section">
-                <div class="tunnelman">
-                    <div class="project-section-title fadeInTop">Tunnelman Game</div>
-                    <hr class="line">
+                <div class="tunnelman tunnelmanC">
+                    <div class="project-section-title">Tunnelman Game</div>
+                    <hr id="project-section-line" class="line">
                     <div class="project-section-info">
-                        <div class="fadeInLeft">
-                            <div class="outer-gif-card" data-tilt>
-                                <div class="inner-gif-card">
+                        <div class="outer-gif">
+                            <div class="outer-gif-card tunnelman-outer" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true">
+                                <div class="inner-gif-card tunnelman-inner">
                                     <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
                                         alt="funny GIF">
                                 </div>
                             </div>
                         </div>
-                        <div class="fadeInRight">
-                            <div class="outer-info-card animated" data-tilt>
-                                <div class="inner-info-card">
+                        <div class="outer-info">
+                            <div class="outer-info-card tunnelman-outer" data-tilt data-tilt-startX="10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
+                                <div class="inner-info-card tunnelman-inner">
                                     <div class="project-sec-desc">
                                         Hello
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
             <section id="sdzoo-section">
-                <div class="sdzoo">
-                    <div>
-                        Tunnel
+                <div class="sdzoo sdzooC">
+                    <div class="project-section-title">San Diego Zoo Navigation App</div>
+                    <hr id="project-section-line" class="line">
+                    <div class="project-section-info">
+                        <div class="outer-gif">
+                            <div class="outer-gif-card sdzoo-outer" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true">
+                                <div class="inner-gif-card sdzoo-inner">
+                                    <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
+                                        alt="funny GIF">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outer-info">
+                            <div class="outer-info-card sdzoo-outer" data-tilt data-tilt-startX="10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
+                                <div class="inner-info-card sdzoo-inner">
+                                    <div class="project-sec-desc">
+                                        Hello
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="codebrown-section">
+                <div class="codebrown codebrownC">
+                    <div class="project-section-title">Code Brown</div>
+                    <hr id="project-section-line" class="line">
+                    <div class="project-section-info">
+                        <div class="outer-gif">
+                            <div class="outer-gif-card codebrown-outer" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true">
+                                <div class="inner-gif-card codebrown-inner">
+                                    <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
+                                        alt="funny GIF">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outer-info">
+                            <div class="outer-info-card codebrown-outer" data-tilt data-tilt-startX="10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
+                                <div class="inner-info-card codebrown-inner">
+                                    <div class="project-sec-desc">
+                                        Hello
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="covid19-section">
+                <div class="covid19 covid19C">
+                    <div class="project-section-title">Covid-19 Lockdown Report</div>
+                    <hr id="project-section-line" class="line">
+                    <div class="project-section-info">
+                        <div class="outer-gif">
+                            <div class="outer-gif-card covid19-outer" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true">
+                                <div class="inner-gif-card covid19-inner">
+                                    <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
+                                        alt="funny GIF">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outer-info">
+                            <div class="outer-info-card covid19-outer" data-tilt data-tilt-startX="10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
+                                <div class="inner-info-card covid19-inner">
+                                    <div class="project-sec-desc">
+                                        Hello
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="youtube-section">
+                <div class="youtube youtubeC">
+                    <div class="project-section-title">Youtube Homepage Recreation</div>
+                    <hr id="project-section-line" class="line">
+                    <div class="project-section-info">
+                        <div class="outer-gif">
+                            <div class="outer-gif-card youtube-outer" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true">
+                                <div class="inner-gif-card youtube-inner">
+                                    <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
+                                        alt="funny GIF">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outer-info">
+                            <div class="outer-info-card youtube-outer" data-tilt data-tilt-startX="10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
+                                <div class="inner-info-card youtube-inner">
+                                    <div class="project-sec-desc">
+                                        Hello
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
-
     </main>
     <footer>
 
     </footer>
     <script type="module" src="node_modules\vanilla-tilt\src\vanilla-tilt.js"></script>
+
 </body>
 
 </html>
