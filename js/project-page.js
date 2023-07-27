@@ -1,21 +1,4 @@
-// const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             document.querySelector(".project-section-title").classList.add("fadeInTop");
-//             document.querySelector(".line").classList.add("animate-line");
-//             document.querySelector(".outer-gif").classList.add("fadeInLeft");
-//             document.querySelector(".outer-info").classList.add("fadeInRight");
-//         } else {
-//             document.querySelector(".project-section-title").classList.remove("fadeInTop");
-//             document.querySelector(".line").classList.remove("animate-line");
-//             document.querySelector(".outer-gif").classList.remove("fadeInLeft");
-//             document.querySelector(".outer-info").classList.remove("fadeInRight");
-//         }
-//     })
-// })
-// // observer.observe(document.querySelector(".sdzoo"));
-// observer.observe(document.querySelector(".tunnelman"));
-
+// Project info animation
 function handleSectionAnimation(entries, observer) {
     entries.forEach(entry => {
         const titleElement = entry.target.querySelector(".project-section-title");
@@ -43,11 +26,23 @@ tunnelmanObserver.observe(document.querySelector("#tunnelman-section"));
 const sdzooObserver = new IntersectionObserver(handleSectionAnimation);
 sdzooObserver.observe(document.querySelector("#sdzoo-section"));
 
-const covidObserver = new IntersectionObserver(handleSectionAnimation);
-tunnelmanObserver.observe(document.querySelector("#covid19-section"));
-
 const codeBrownObserver = new IntersectionObserver(handleSectionAnimation);
 sdzooObserver.observe(document.querySelector("#codebrown-section"));
 
+const covidObserver = new IntersectionObserver(handleSectionAnimation);
+tunnelmanObserver.observe(document.querySelector("#covid19-section"));
+
 const youtubeObserver = new IntersectionObserver(handleSectionAnimation);
 sdzooObserver.observe(document.querySelector("#youtube-section"));
+
+
+// Back to top button
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})

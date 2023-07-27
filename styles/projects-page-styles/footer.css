@@ -1,0 +1,34 @@
+footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 100px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    font-size: 14px;
+}
+
+.footer-links:hover {
+    color: rgb(9, 121, 105);
+}
+
+.sleeping-cat {
+    position: absolute;
+    width: 75px;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+}
