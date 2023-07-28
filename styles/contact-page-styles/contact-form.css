@@ -1,118 +1,118 @@
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm fieldset,
-#fs-frm optgroup,
-#fs-frm label,
-#fs-frm #card-element:disabled {
-    font-family: inherit;
-    /* font-size: 100%; */
-    font-size: 16px;
-    color: inherit;
-    border: none;
-    border-radius: 0;
-    display: block;
-    /* width: 100%; */
-    width: 400px;
-    padding: 0;
-    margin: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
+.root-container {
+    width: 1100px;
+    height: 600px;
 
-#fs-frm label,
-#fs-frm legend,
-#fs-frm ::placeholder {
-    font-size: .825rem;
-    margin-bottom: .5rem;
-    padding-top: .2rem;
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
-/* border, padding, margin, width */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm #card-element {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: .75em 1rem;
-    margin-bottom: 1.5rem;
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 85%;
+    box-shadow: -7px 10px 5px 0px rgba(0,0,0,0.19);
+    border-radius: 10px;
 }
 
-#fs-frm input:focus,
-#fs-frm select:focus,
-#fs-frm textarea:focus {
-    background-color: white;
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: gray;
-    outline-offset: -1px;
+.bg-side {
+    width: 50%;
+    height: 100%;
+    background-color: #10769e;
+    background: url("../../images/mountain.jpg");
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-#fs-frm [type="text"],
-#fs-frm [type="email"] {
-    width: 100%;
+.form-side {
+    width: 50%;
+    height: 100%;
+    background-color: #FBD8C2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-#fs-frm [type="button"],
-#fs-frm [type="submit"],
-#fs-frm [type="reset"] {
-    width: auto;
-    cursor: pointer;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+form {
+    margin-top: 15%;
+    margin-left: 10%;
 }
 
-#fs-frm [type="button"]:focus,
-#fs-frm [type="submit"]:focus,
-#fs-frm [type="reset"]:focus {
+h3 {
+    color: #ff6201b7;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+*:focus {
     outline: none;
 }
 
-#fs-frm [type="submit"],
-#fs-frm [type="reset"] {
-    margin-bottom: 0;
+form .name:hover,
+form .email:hover,
+form .subject:hover,
+form textarea:hover {
+    border: 2px solid rgb(218, 218, 218);
 }
 
-#fs-frm select {
-    text-transform: none;
+form .name {
+    width: 175px;
+    height: 32px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(248, 246, 246, 0.733);
+    border-radius: 4px;
+    transition: border 0.25s;
 }
 
-#fs-frm [type="checkbox"] {
-    -webkit-appearance: checkbox;
-    -moz-appearance: checkbox;
-    appearance: checkbox;
-    display: inline-block;
-    width: auto;
-    margin: 0 .5em 0 0 !important;
+form .email {
+    width: 175px;
+    height: 32px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(248, 246, 246, 0.733);
+    border-radius: 4px;
+    transition: border 0.25s;
 }
 
-#fs-frm [type="radio"] {
-    -webkit-appearance: radio;
-    -moz-appearance: radio;
-    appearance: radio;
+form .subject {
+    display: block;
+    width: 372.5px;
+    height: 32px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(248, 246, 246, 0.733);
+    border-radius: 4px;
+    transition: border 0.25s;
 }
 
-/* address, locale */
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-    display: inline;
+form textarea {
+    width: 374.5px;
+    height: 225px;
+    display: block;
+    margin-bottom: 10px;
+    border: 2px solid rgba(248, 246, 246, 0.733);
+    border-radius: 4px;
+    transition: border 0.25s;
 }
 
-#fs-frm fieldset.locale input[name="city"] {
-    width: 52%;
+form button {
+    width: 125px;
+    height: 35px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6201b7;
+    cursor: pointer;
+    transition: opacity 0.25s;
 }
 
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-    width: 20%;
-}
-
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"] {
-    margin-right: 3%;
+form button:hover {
+    opacity: 0.8;
 }
