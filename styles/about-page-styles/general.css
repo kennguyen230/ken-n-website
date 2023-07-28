@@ -10,9 +10,7 @@ body {
     background-color: white;
     padding: 50px;
     padding-top: 100px;
-    border-bottom-style: solid;
-    border-bottom-color: gray;
-    border-bottom-width: 1px;
+    border-bottom: 1px solid grey;
     font-family: 'Heebo', sans-serif;
 }
 
