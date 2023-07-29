@@ -1,14 +1,29 @@
 .boat {
     width: 15%;
     position: absolute;
-    top: -200px;
-    left: 100px;
+    top: -2%;
+    left: 8%;
 }
 
 .school-fish {
     width: 15%;
     transform: rotate(-5deg);
     position: absolute;
-    right: 35px;
-    top: -50px;
+    right: 5%;
+    top: -5%;
+}
+
+.squid {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.angler {
+    width: 8%;
+    position: absolute;
+    bottom: 40%;
+    right: 5%;
+    opacity: 0;
 }
