@@ -7,26 +7,26 @@
     padding: 50px;
     font-family: 'Heebo', sans-serif;
     height: 150vh;
-}
-
-.tunnelman,
-.sdzoo,
-.codebrown,
-.covid19,
-.youtube {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    /* position: absolute; */
+    position: relative;
 }
 
 .youtube {
     border-bottom: 1px solid grey;
 }
 
-.tunnelmanC {
-    background-color: #00acb8;
+.project-info-container {
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    position: relative;
 }
+
+/* .tunnelmanC {
+    background-color: #00acb8;
+} */
 
 .tunnelman-outer {
     background-color: #8fbfff;
@@ -37,9 +37,9 @@
     border-color: #131f20;
 }
 
-.sdzooC {
+/* .sdzooC {
     background-color: #007533;
-}
+} */
 
 .sdzoo-outer {
     background-color: #75eba8;
@@ -50,9 +50,9 @@
     border-color: #15231b;
 }
 
-.codebrownC {
+/* .codebrownC {
     background-color: #a63a0c;
-}
+} */
 
 .codebrown-outer {
     background-color: #f3d354;
@@ -63,9 +63,9 @@
     border-color: #f3ab54;
 }
 
-.covid19C {
+/* .covid19C {
     background-color: #d23737;
-}
+} */
 
 .covid19-outer {
     background-color: #dea66d;
@@ -76,9 +76,9 @@
     border-color: #360c0c;
 }
 
-.youtubeC {
+/* .youtubeC {
     background-color: #f9bebe;
-}
+} */
 
 .youtube-outer {
     background-color: #efa357;

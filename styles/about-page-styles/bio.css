@@ -12,23 +12,6 @@
     position: relative;
 }
 
-.calico {
-    position: absolute;
-    width: 58px;
-    top: -35px;
-    left: 115px;
-    /* margin-bottom: -60px; */
-    /* margin-left: 15px; */
-}
-
-.tennis-ball {
-    position: absolute;
-    width: 30px;
-    left: 210px;
-    /* margin-bottom: -90px; */
-    /* margin-left: 40px; */
-}
-
 .cat-tower {
     position: absolute;
     width: 90px;

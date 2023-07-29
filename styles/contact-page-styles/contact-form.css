@@ -8,7 +8,21 @@
 
     margin-top: 100px;
     margin-bottom: 100px;
+    position: relative;
+}
 
+.calico {
+    position: absolute;
+    width: 58px;
+    top: -50px;
+    left: 120px;
+}
+
+.tennis-ball {
+    position: absolute;
+    width: 30px;
+    left: 210px;
+    top: -16px;
 }
 
 .contact-container {
@@ -16,7 +30,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 85%;
+    width: 90%;
     box-shadow: -7px 10px 5px 0px rgba(0,0,0,0.19);
     border-radius: 10px;
 }
