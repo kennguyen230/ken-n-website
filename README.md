@@ -1,5 +1,0 @@
-﻿# Ken Portfolio
-
-For use as a software developer (front-end & mobile dev) portfolio. This portfolio showcases my education, skills, and work history.
-
-**Check it out here: **
