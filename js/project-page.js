@@ -5,20 +5,20 @@ function handleSectionAnimation(entries, observer) {
         const lineElement = entry.target.querySelector(".line");
         const gifElement = entry.target.querySelector(".outer-gif");
         const infoElement = entry.target.querySelector(".outer-info");
-        const angler = entry.target.querySelector(".angler");
+        const angler = entry.target.querySelector("#angler");
 
         if (entry.isIntersecting) {
             titleElement.classList.add("fadeInTop");
             lineElement.classList.add("animate-line");
             gifElement.classList.add("fadeInLeft");
             infoElement.classList.add("fadeInRight");
-            angler.classList.add("fadeIn");
+            // angler.classList.add("fadeIn");
         } else {
             titleElement.classList.remove("fadeInTop");
             lineElement.classList.remove("animate-line");
             gifElement.classList.remove("fadeInLeft");
             infoElement.classList.remove("fadeInRight");
-            angler.classList.remove("fadeIn");
+            // angler.classList.remove("fadeIn");
         }
     })
 }

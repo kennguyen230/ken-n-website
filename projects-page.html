@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Project Page</title>
+    <title>Projects | Ken Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,7 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script src="js/project-page.js" defer></script>
-    <script defer type="module" src="node_modules\vanilla-tilt\src\vanilla-tilt.js"></script>
+    <script type="module" src="node_modules\vanilla-tilt\src\vanilla-tilt.js"></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <div class="nav-container">
                 <nav class="navbar">
                     <ul>
-                        <li><a class="tab" href="about-page.html">About</a></li>
+                        <li><a class="tab" href="index.html">About</a></li>
                         <li><a class="active" href="projects-page.html">Projects</a></li>
                         <li><a class="tab" href="contact-page.html">Contact</a></li>
                     </ul>
@@ -51,13 +51,13 @@
 
             <!-- Projects -->
             <div class="projects-container">
-                <a class="project" href="#tunnelman-section">
-                    <img class="project-icon" src="icons/tunnelman.png">
+                <a class="project" href="#youtube-section">
+                    <img class="project-icon" src="icons/youtubeicon.png">
                     <div class="project-title">
-                        Tunnelman Game
+                        Youtube Homepage Recreation
                     </div>
                     <div class="project-description">
-                        A recreation of an 80s arcade game known as Digdug. Created using OpenGL and written in C++.
+                        A recreation of the Youtube front page using HTML and CSS.
                     </div>
                     <div class="project-link">
                         <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
@@ -83,8 +83,20 @@
                         Code Brown
                     </div>
                     <div class="project-description">
-                        Counter app inspired by a New Years resolution to track bowel movements. Written in Swift
-                        and SwiftUI.
+                        Counter app inspired by a New Years resolution to track bowel movements. Written in Swift.
+                    </div>
+                    <div class="project-link">
+                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        Learn more
+                    </div>
+                </a>
+                <a class="project" href="#tunnelman-section">
+                    <img class="project-icon" src="icons/tunnelman.png">
+                    <div class="project-title">
+                        Tunnelman Game
+                    </div>
+                    <div class="project-description">
+                        A recreation of an 80s arcade game known as Digdug. Created using OpenGL and written in C++.
                     </div>
                     <div class="project-link">
                         <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
@@ -97,23 +109,8 @@
                         Covid-19 Lockdown Report
                     </div>
                     <div class="project-description">
-                        A disection and visualization of data on mental health trends post Covid-19 lockdown. Created
+                        A visualization of data on mental health trends post-Covid-19 lockdown. Created
                         using Python.
-                    </div>
-                    <div class="project-link">
-                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
-                        Learn more
-                    </div>
-                </a>
-                <a class="project" href="#youtube-section">
-
-                    <img class="project-icon" src="icons/youtubeicon.png">
-                    <div class="project-title">
-                        Youtube Homepage Recreation
-                    </div>
-                    <div class="project-description">
-                        A faithful recreation of the Youtube front page using HTML and CSS. The website is scalable and
-                        responsive.
                     </div>
                     <div class="project-link">
                         <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
@@ -245,7 +242,7 @@
 
             <section id="covid19-section">
                 <div class="covid19 covid19C">
-                    <img class="angler" src="icons/angler.png" alt="angler">
+                    <img id="angler" class="angler" src="icons/angler.png" alt="angler">
                     <div class="project-section-title">Covid-19 Lockdown Report</div>
                     <hr id="project-section-line" class="line">
                     <div class="project-section-info">
