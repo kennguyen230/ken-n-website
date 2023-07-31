@@ -12,13 +12,13 @@ function handleSectionAnimation(entries, observer) {
             lineElement.classList.add("animate-line");
             gifElement.classList.add("fadeInLeft");
             infoElement.classList.add("fadeInRight");
-            // angler.classList.add("fadeIn");
+            angler.classList.add("fadeIn");
         } else {
             titleElement.classList.remove("fadeInTop");
             lineElement.classList.remove("animate-line");
             gifElement.classList.remove("fadeInLeft");
             infoElement.classList.remove("fadeInRight");
-            // angler.classList.remove("fadeIn");
+            angler.classList.remove("fadeIn");
         }
     })
 }
