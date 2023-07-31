@@ -14,6 +14,7 @@ body {
     padding: 50px;
     padding-top: 50px;
     font-family: 'Heebo', sans-serif;
+    border-bottom: 1px solid grey;
 }
 
 p {
