@@ -3,8 +3,8 @@ function handleSectionAnimation(entries, observer) {
     entries.forEach(entry => {
         const titleElement = entry.target.querySelector(".project-section-title");
         const lineElement = entry.target.querySelector(".line");
-        const gifElement = entry.target.querySelector(".outer-gif");
-        const infoElement = entry.target.querySelector(".outer-info");
+        const gifElement = entry.target.querySelector(".animate-gif");
+        const infoElement = entry.target.querySelector(".animate-info");
 
         if (entry.isIntersecting) {
             titleElement.classList.add("fadeInTop");
@@ -20,8 +20,11 @@ function handleSectionAnimation(entries, observer) {
     })
 }
 
-const tunnelmanObserver = new IntersectionObserver(handleSectionAnimation);
-tunnelmanObserver.observe(document.querySelector("#tunnelman-section"));
+const portfolioObserver = new IntersectionObserver(handleSectionAnimation);
+portfolioObserver.observe(document.querySelector("#portfolio-section"));
+
+const youtubeObserver = new IntersectionObserver(handleSectionAnimation);
+youtubeObserver.observe(document.querySelector("#youtube-section"));
 
 const sdzooObserver = new IntersectionObserver(handleSectionAnimation);
 sdzooObserver.observe(document.querySelector("#sdzoo-section"));
@@ -29,11 +32,8 @@ sdzooObserver.observe(document.querySelector("#sdzoo-section"));
 const codeBrownObserver = new IntersectionObserver(handleSectionAnimation);
 sdzooObserver.observe(document.querySelector("#codebrown-section"));
 
-const portfolioObserver = new IntersectionObserver(handleSectionAnimation);
-tunnelmanObserver.observe(document.querySelector("#portfolio-section"));
-
-const youtubeObserver = new IntersectionObserver(handleSectionAnimation);
-sdzooObserver.observe(document.querySelector("#youtube-section"));
+const tunnelmanObserver = new IntersectionObserver(handleSectionAnimation);
+tunnelmanObserver.observe(document.querySelector("#tunnelman-section"));
 
 
 // Back to top button

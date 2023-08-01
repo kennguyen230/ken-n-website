@@ -52,7 +52,6 @@
 
 .job-icon {
     width: 45px;
-    /* object-fit: fit; */
     border-radius: 20px;
 }
 
@@ -80,19 +79,14 @@
 }
 
 .skill {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1em 1fr;
     align-items: center;
-    margin-bottom: 22px;
-}
-
-.skill-icon {
-    width: 25px;
-    height: 25px;
-    object-fit: fit;
-    /* border-radius: 10px; */
-    margin-right: 10px;
+    margin-bottom: 25px;
 }
 
 .skill-title {
     font-size: 14px;
+    color: rgb(148, 148, 148);
+    padding-left: 40px;
 }

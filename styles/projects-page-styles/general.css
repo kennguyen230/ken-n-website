@@ -46,7 +46,8 @@ html {
     opacity: 0;
     pointer-events: none;
     transition: all .4s;
-    box-shadow: 0px 10px 13px -3px rgba(0,0,0,0.41);
+    /* box-shadow: 0px 10px 13px -3px rgba(0,0,0,0.41); */
+    box-shadow: 1px 3px 20px -4px rgba(0, 0, 0, 0.48);
 }
 
 .to-top.active {
@@ -55,6 +56,25 @@ html {
     opacity: 1;
 }
 
-.to-top:hover span{
+.to-top:hover span {
     transform: translateY(-2px);
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #a1a1a1 #ffffff;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #a1a1a1;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
 }

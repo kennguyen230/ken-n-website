@@ -3,6 +3,7 @@
 
 <head>
     <title>Projects | Ken Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="resources/icons/animals/calicoicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,11 +16,11 @@
     <link rel="stylesheet" href="styles/projects-page-styles/icons.css">
     <link rel="stylesheet" href="styles/projects-page-styles/project-section-animations.css">
     <link rel="stylesheet" href="styles/projects-page-styles/footer.css">
+    <link rel="stylesheet" href="styles/projects-page-styles/project-section-info-cards.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <script src="js/project-page.js" defer></script>
-
+    <script defer src="https://kit.fontawesome.com/32f7030fe2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
             <div class="projects-container">
                 <a class="project" href="#portfolio-section">
                     <!-- TODO: Change project icon -->
-                    <img class="project-icon" src="icons/covid19.png">
+                    <img class="project-icon" src="resources/icons/animals/calicoicon.png">
                     <div class="project-title">
                         Personal Portfolio
                     </div>
@@ -61,12 +62,12 @@
                         A website for the purposes of showcasing projects, skills, education, and work history.
                     </div>
                     <div class="project-link">
-                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
                         Learn more
                     </div>
                 </a>
                 <a class="project" href="#youtube-section">
-                    <img class="project-icon" src="icons/youtubeicon.png">
+                    <img class="project-icon" src="resources/icons/project-icons/youtubeicon.png">
                     <div class="project-title">
                         Youtube Homepage Recreation
                     </div>
@@ -74,12 +75,12 @@
                         A recreation of the Youtube front page using HTML and CSS.
                     </div>
                     <div class="project-link">
-                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
                         Learn more
                     </div>
                 </a>
                 <a class="project" href="#sdzoo-section">
-                    <img class="project-icon" src="icons/sdzoo.png">
+                    <img class="project-icon" src="resources/icons/project-icons/sdzoo.png">
                     <div class="project-title">
                         San Diego Zoo Navigation App
                     </div>
@@ -87,12 +88,12 @@
                         An Android app that allows users to navigate thru the San Diego Zoo. Written in Java.
                     </div>
                     <div class="project-link">
-                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
                         Learn more
                     </div>
                 </a>
                 <a class="project" href="#codebrown-section">
-                    <img class="project-icon" src="icons/appstore.svg">
+                    <img class="project-icon" src="resources/icons/project-icons/appstore.svg">
                     <div class="project-title">
                         Code Brown
                     </div>
@@ -100,12 +101,12 @@
                         Counter app inspired by a New Years resolution to track bowel movements. Written in Swift.
                     </div>
                     <div class="project-link">
-                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
                         Learn more
                     </div>
                 </a>
                 <a class="project" href="#tunnelman-section">
-                    <img class="project-icon" src="icons/tunnelman.png">
+                    <img class="project-icon" src="resources/icons/project-icons/tunnelman.png">
                     <div class="project-title">
                         Tunnelman Game
                     </div>
@@ -113,7 +114,7 @@
                         A recreation of an 80s arcade game known as Digdug. Created using OpenGL and written in C++.
                     </div>
                     <div class="project-link">
-                        <img class="project-link-icon" src="icons/link_FILL0_wght200_GRAD0_opsz20.svg">
+                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
                         Learn more
                     </div>
                 </a>
@@ -123,25 +124,65 @@
 
             <!-- Project sections -->
             <section id="portfolio-section">
-                <div class="portfolio">
+                <div class="project-layout">
                     <div class="project-section-title">Personal Portfolio</div>
                     <hr id="project-section-line" class="line">
                     <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="outer-gif-card portfolio-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-gif-card portfolio-inner">
-                                    <img class="demo-gif" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
-                                        alt="funny GIF">
-                                </div>
+                        <div class="animate-gif">
+                            <div class="bigger-GIF-card" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-scale="1.1" data-tilt data-tilt-axis="x">
+                                <video src="resources/gifs/portfolio-demo.mp4" class="demo-video" controls muted></video>
                             </div>
                         </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card portfolio-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-info-card portfolio-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
+                        <div class="animate-info">
+                            <div class="right-side">
+                                <div class="info-cards">
+                                    <span class="info-header">Tech stack</span>
+                                    <div class="tech-stack info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <div class="tech-icons-box">
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-html5 fa-2xl" style="color: #ffb54d;"></i>
+                                                <span class="language-name">HTML</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #2675fd;"></i>
+                                                <span class="language-name">CSS</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-js fa-2xl" style="color: #dee114;"></i>
+                                                <span class="language-name">JS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/kennguyen230/ken-n-website" target="_blank">
+                                        <div class="github-link info-box">
+                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Features</span>
+                                    <div class="features info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <ul>
+                                            <li>Three tabs for about, project, and contact page</li>
+                                            <li>Sticky floating navigation bar that keeps track of current page</li>
+                                            <li>Responsive design that works with any device</li>
+                                            <li>Emailing support using Email.js</li>
+                                            <li>Tilting project cards with vanilla-tilt.js</li>
+                                            <li>Myriad of animations throughout project</li>
+                                            <li>Back to top button</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Goal</span>
+                                    <div class="goals info-box" data-tilt data-tilt-reset-to-start="true">
+                                        This project serves as an online resume and showcasing of projects. The home
+                                        page features a brief bio, followed by links to projects, then a summary of my
+                                        skills, work history, and education. The goal was to create an easy to digest
+                                        and responsive website packaged into a pleasant design that teeters between
+                                        simplicity and character. It was important to include a contacts page for any
+                                        business inquiries and feedback on the website.
                                     </div>
                                 </div>
                             </div>
@@ -151,25 +192,60 @@
             </section>
 
             <section id="youtube-section">
-                <div class="youtube">
-                    <div class="project-section-title">MyYoutube</div>
+                <div class="project-layout">
+                    <div class="project-section-title">Youtube Homepage Clone</div>
                     <hr id="project-section-line" class="line">
                     <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="bigger-outer-gif-card youtube-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="bigger-inner-gif-card youtube-inner">
-                                    <img class="demo-gif" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
-                                        alt="funny GIF">
-                                </div>
+                        <div class="animate-gif">
+                            <div class="bigger-GIF-card" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-scale="1.1" data-tilt data-tilt-axis="x">
+                                <video src="resources/gifs/youtube-demo.mp4" class="demo-video" controls muted></video>
                             </div>
                         </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card youtube-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-info-card youtube-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
+                        <div class="animate-info">
+                            <div class="right-side">
+                                <div class="info-cards">
+                                    <span class="info-header">Tech stack</span>
+                                    <div class="tech-stack info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <div class="tech-icons-box">
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-html5 fa-2xl" style="color: #ffb54d;"></i>
+                                                <span class="language-name">HTML</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #2675fd;"></i>
+                                                <span class="language-name">CSS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/kennguyen230/my-youtube" target="_blank">
+                                        <div class="github-link info-box">
+                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Features</span>
+                                    <div class="features info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <ul>
+                                            <li>Fully responsive website suitable for mobile and desktop</li>
+                                            <li>Sticky resizing header with tooltips on each button</li>
+                                            <li>Videos grid</li>
+                                            <li>Videos with thumbnails, titles, views, post date, and working video link
+                                            </li>
+                                            <li>Channel summary tooltip upon hover</li>
+                                            <li>Sticky sidebar</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Goal</span>
+                                    <div class="goals info-box" data-tilt data-tilt-reset-to-start="true">
+                                        The goal was to create a project that worked well on all devices. This project
+                                        allowed for an opportunity to try out new HTML and CSS features and refine
+                                        preexisting knowledge. I chose a platform that was widely familiar to everyone
+                                        so that demonstrations would be straightforward and the bar for “nailing it”
+                                        would be clear.
                                     </div>
                                 </div>
                             </div>
@@ -179,158 +255,71 @@
             </section>
 
             <section id="sdzoo-section">
-                <div class="sdzoo">
+                <div class="project-layout">
                     <div class="project-section-title">San Diego Zoo App</div>
                     <hr id="project-section-line" class="line">
                     <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="outer-gif-card sdzoo-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-gif-card sdzoo-inner">
-                                    <img class="demo-gif" src="gifs/sdzoo.gif" alt="funny GIF">
-                                </div>
+                        <div class="animate-gif">
+                            <div class="GIF-card" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-scale="1.1" data-tilt data-tilt-axis="x">
+                                <img class="demo-gif" src="resources/gifs/sdzoo.gif" alt="sd-zoo-demo">
                             </div>
                         </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card sdzoo-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-info-card sdzoo-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
+                        <div class="animate-info">
+                            <div class="right-side">
+                                <div class="info-cards">
+                                    <span class="info-header">Tech stack</span>
+                                    <div class="sdzoo-tech-stack info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <div class="tech-icons-box">
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-java fa-2xl" style="color: #e49c21;"></i>
+                                                <span class="language-name">Java</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-android fa-2xl" style="color: #40d00b;"></i>
+                                                <span class="language-name">Android</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-solid fa-location-dot fa-2xl" style="color: #d25151;"></i>
+                                                <span class="language-name" style="text-align: center">Google API</span>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <a href="https://github.com/kennguyen230/san-diego-zoo" target="_blank">
+                                        <div class="github-link info-box">
+                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section id="codebrown-section">
-                <div class="codebrown">
-                    <div class="project-section-title">Code Brown</div>
-                    <hr id="project-section-line" class="line">
-                    <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="outer-gif-card codebrown-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-gif-card codebrown-inner">
-                                    <img class="demo-gif" src="gifs/codebrown.gif" alt="funny GIF">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card codebrown-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-info-card codebrown-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="tunnelman-section">
-                <div class="tunnelman">
-                    <div class="project-section-title">Tunnelman Game</div>
-                    <hr id="project-section-line" class="line">
-                    <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="bigger-outer-gif-card tunnelman-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="bigger-inner-gif-card tunnelman-inner">
-                                    <video class="demo-video" controls muted>
-                                        <source src="gifs/tunnelman-demo.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card tunnelman-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-info-card tunnelman-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Project section -->
-        <!-- <div class="project-info-container">
-
-            <img class="boat" src="icons/boat.png" alt="boat">
-
-            <section id="youtube-section">
-                <div class="youtube youtubeC">
-                    <div class="project-section-title">Youtube Homepage Recreation</div>
-                    <hr id="project-section-line" class="line">
-                    <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="bigger-outer-gif-card youtube-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="bigger-inner-gif-card youtube-inner">
-                                    <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
-                                        alt="funny GIF">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card youtube-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
-                                <div class="inner-info-card youtube-inner">
-                                    <div class="project-sec-desc">
-                                        <h2>Tech stack</h2>
-                                        <p class="project-tech">
-                                            HTML, CSS
-                                        </p>
-                                        <h2>Features</h2>
-                                        <ul class="features-list">
-                                            <li>Responsive design</li>
-                                            <li>Header</li>
-                                            <li>Responsive design</li>
-                                            <li>Header</li>
+                                <div class="info-cards">
+                                    <span class="info-header">Features</span>
+                                    <div class="features info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <ul>
+                                            <li>Homescreen with exhibits search bar</li>
+                                            <li>Planned exhibits cart in homescreen</li>
+                                            <li>Inbetween screen with option for editing exhibits cart</li>
+                                            <li>Simple or detailed navigation instructions</li>
+                                            <li>Text navigation instructions </li>
+                                            <li>Rerouting based on user location</li>
                                         </ul>
-                                        <h3 class="project-goal">Goal</h3>
-                                        <p class="goal-desc">
-                                            The goal of this project was to create a convincing Youtube homepage. 
-                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                <div class="info-cards">
+                                    <span class="info-header">Goal</span>
+                                    <div class="sdzoo-goals-box info-box" data-tilt data-tilt-reset-to-start="true">
+                                        A navigation app for visitors of the San Diego zoo. There were three main
+                                        objectives for this project. The first was to focus on the workflow aspect of
+                                        creating a large project. This meant making use of Agile practices in order to
+                                        break users stories down to bite sized tasks, assigning time frames for those
+                                        tasks, and maintaining a burndown chart. And consequently, we were expected to
+                                        make deadlines based on 2-week sprints over the course of 8 weeks. The second
+                                        aim of the project was to familiarize ourselves with software engineering
+                                        principles like SOLID, SRP, and DRY. And the last objective was to make sure our
+                                        project was well tested using unit and integration tests.
+                                    </div>
+                                </div>
 
-            <section id="sdzoo-section">
-                <div class="sdzoo sdzooC">
-                    <img class="school-fish" src="icons/schoolfish.png" alt="school-of-fish">
-                    <div class="project-section-title">San Diego Zoo Navigation App</div>
-                    <hr id="project-section-line" class="line">
-                    <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="outer-gif-card sdzoo-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-gif-card sdzoo-inner">
-                                    <img class="demo" src="gifs/sdzoo.gif" alt="funny GIF">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card sdzoo-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
-                                <div class="inner-info-card sdzoo-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -338,24 +327,66 @@
             </section>
 
             <section id="codebrown-section">
-                <div class="codebrown codebrownC">
+                <div class="project-layout">
                     <div class="project-section-title">Code Brown</div>
                     <hr id="project-section-line" class="line">
                     <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="outer-gif-card codebrown-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-gif-card codebrown-inner">
-                                    <img class="demo" src="gifs/codebrown.gif" alt="funny GIF">
-                                </div>
+                        <div class="animate-gif">
+                            <div class="GIF-card" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-scale="1.1" data-tilt data-tilt-axis="x">
+                                <img class="demo-gif" src="resources/gifs/codebrown.gif" alt="codebrown-demo">
                             </div>
                         </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card codebrown-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
-                                <div class="inner-info-card codebrown-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
+                        <div class="animate-info">
+                            <div class="right-side">
+                                <div class="info-cards">
+                                    <span class="info-header">Tech stack</span>
+                                    <div class="codebrown-tech-stack info-box" data-tilt
+                                        data-tilt-reset-to-start="true">
+                                        <div class="tech-icons-box">
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-swift fa-2xl" style="color: #ff9838;"></i>
+                                                <span class="language-name">Swift</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-swift fa-2xl" style="color: #266de8;"></i>
+                                                <span class="language-name">SwiftUI</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-brands fa-app-store-ios fa-2xl"
+                                                    style="color: #5291ff;"></i>
+                                                <span class="language-name">XCode</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/kennguyen230/Code-Brown" target="_blank">
+                                        <div class="github-link info-box">
+                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Features</span>
+                                    <div class="features info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <ul>
+                                            <li>Fully responsive website suitable for mobile and desktop</li>
+                                            <li>Sticky resizing header with tooltips on each button</li>
+                                            <li>Videos grid</li>
+                                            <li>Videos with thumbnails, titles, views, post date, and working video link
+                                            </li>
+                                            <li>Channel summary tooltip upon hover</li>
+                                            <li>Sticky sidebar</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Goal</span>
+                                    <div class="goals info-box" data-tilt data-tilt-reset-to-start="true">
+                                        The goal was to create a project that worked well on all devices. This project
+                                        allowed for an opportunity to try out new HTML and CSS features and refine
+                                        preexisting knowledge. I chose a platform that was widely familiar to everyone
+                                        so that demonstrations would be straightforward and the bar for “nailing it”
+                                        would be clear.
                                     </div>
                                 </div>
                             </div>
@@ -365,28 +396,61 @@
             </section>
 
             <section id="tunnelman-section">
-                <div class="tunnelman tunnelmanC">
-                    <img class="squid" src="icons/squid.png" alt="squid">
+                <div class="project-layout">
                     <div class="project-section-title">Tunnelman Game</div>
                     <hr id="project-section-line" class="line">
                     <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="bigger-outer-gif-card tunnelman-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="bigger-inner-gif-card tunnelman-inner">
-                                    <video width="575" height="575" style="border-radius: 40px; object-fit: cover;"
-                                        controls muted>
-                                        <source src="gifs/tunnelman-demo.mp4" type="video/mp4">
-                                    </video>
-                                </div>
+                        <div class="animate-gif">
+                            <div class="bigger-GIF-card" data-tilt data-tilt-startX="-10" data-tilt-startY="-3"
+                                data-tilt-reset-to-start="true" data-tilt data-tilt-scale="1.1" data-tilt data-tilt-axis="x">
+                                <video class="demo-video" src="resources/gifs/tunnelman-demo.mp4" controls muted></video>
                             </div>
                         </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card tunnelman-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
-                                <div class="inner-info-card tunnelman-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
+                        <div class="animate-info">
+                            <div class="right-side">
+                                <div class="info-cards">
+                                    <span class="info-header">Tech stack</span>
+                                    <div class="codebrown-tech-stack info-box" data-tilt
+                                        data-tilt-reset-to-start="true">
+                                        <div class="tech-icons-box">
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-regular fa-c fa-2xl" style="color: #4c77c2;"></i>
+                                                <span class="language-name">C++</span>
+                                            </div>
+                                            <div class="tech-stack-icons">
+                                                <i class="fa-solid fa-gamepad fa-2xl" style="color: #c3d1ea;"></i>
+                                                <span class="language-name">OpenGL</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/kennguyen230/Ice_Cold_Man" target="_blank">
+                                        <div class="github-link info-box">
+                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Features</span>
+                                    <div class="features info-box" data-tilt data-tilt-reset-to-start="true">
+                                        <ul>
+                                            <li>Field consisting of the player, protestors, and ice</li>
+                                            <li>Various loot scattered throughout the field</li>
+                                            <li>Protestors who chase and attack the player</li>
+                                            <li>Radar scanner that reveals small surrounding area</li>
+                                            <li>Squirt gun that propels protestors</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-cards">
+                                    <span class="info-header">Goal</span>
+                                    <div class="goals info-box" data-tilt data-tilt-reset-to-start="true">
+                                        A recreation of an 80s arcade game known as DigDug. The player plays as a
+                                        tunnelman whose objective is to collect oil hidden in the ice field all the
+                                        while dodging protestors. The successful implementation of the game was
+                                        contingent on balancing workflow and communication for a large project,
+                                        effectively employing software design principles, and using high level C++
+                                        features.
                                     </div>
                                 </div>
                             </div>
@@ -395,43 +459,13 @@
                 </div>
             </section>
 
-            <section id="covid19-section">
-                <div class="covid19 covid19C">
-                    <img id="angler" class="angler" src="icons/angler.png" alt="angler">
-                    <div class="project-section-title">Covid-19 Lockdown Report</div>
-                    <hr id="project-section-line" class="line">
-                    <div class="project-section-info">
-                        <div class="outer-gif">
-                            <div class="outer-gif-card covid19-outer" data-tilt data-tilt-startX="-10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true">
-                                <div class="inner-gif-card covid19-inner">
-                                    <img class="demo" src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif"
-                                        alt="funny GIF">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="outer-info">
-                            <div class="outer-info-card covid19-outer" data-tilt data-tilt-startX="10"
-                                data-tilt-startY="-3" data-tilt-reset-to-start="true" data-tilt data-tilt-axis="x">
-                                <div class="inner-info-card covid19-inner">
-                                    <div class="project-sec-desc">
-                                        Hello
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div> -->
-
+        </div>
         <!-- Back to top button -->
         <a href="#" class="to-top">
             <span class="material-symbols-outlined">
                 expand_less
             </span>
         </a>
-
     </main>
     <footer>
         <div class="footer-container">
@@ -439,7 +473,7 @@
             <a class="footer-links" href="projects-page.html">Projects</a>
             <a class="footer-links" href="contact-page.html">Contact</a>
         </div>
-        <img class="sleeping-cat" src="icons/grey-cat-snooze.png">
+        <img class="sleeping-cat" src="resources/icons/animals/grey-cat-snooze.png">
     </footer>
     <script type="module" src="node_modules/vanilla-tilt/src/vanilla-tilt.js"></script>
 </body>

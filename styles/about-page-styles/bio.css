@@ -20,11 +20,12 @@
     transform: rotate(8deg);
 }
 
-.grey-cat {
+.sleep {
     position: absolute;
-    width: 70px;
-    top: -115px;
-    left: 10px;
+    width: 100px;
+    height: auto;
+    top: -130px;
+    left: 0px;
     transform: rotate(10deg);
 }
 
@@ -88,4 +89,33 @@
 
 .social:hover {
     opacity: 0.8;
+}
+
+.resume {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.resume a {
+    text-decoration: none;
+}
+
+.resume-opacity {
+    opacity: 0.85;    
+    transition: opacity 0.15s;
+}
+
+.resume-opacity:hover {
+    opacity: 1;
+}
+
+.resume a span {
+    font-size: 12px;
+    color: rgb(114, 114, 114);
+    margin-left: 10px;
+    transition: color 0.15s;
+}
+
+.resume a span:hover {
+    color: rgb(12, 153, 132);
 }
