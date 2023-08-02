@@ -1,0 +1,140 @@
+.parent-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.features-goals-flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.features-goals-flex-box:hover {
+    .features {
+        background-color: white;
+    }
+
+    .goals {
+        background-color: white;
+    }
+}
+
+.tech-github-flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech {
+    width: 80px;
+    height: 207px;
+    border-radius: 25px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.tech-stack-icons-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-stack-name {
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+
+    transition: all .15s;
+    position: relative;
+}
+
+.github:hover {
+    transform: translateY(-4px);
+}
+
+.github-icon {
+    width: 38px;
+}
+
+.features {
+    width: 450px;
+    border-radius: 25px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    position: relative;
+
+}
+
+.features ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: rgb(114, 114, 114);
+}
+
+.goals {
+    width: 450px;
+
+    line-height: 25px;
+    font-size: 13px;
+    color: rgb(114, 114, 114);
+
+    padding: 20px;
+
+    border-radius: 25px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+
+    position: relative;
+}
+
+.info-header {
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    top: -28px;
+    left: 12px;
+    color: rgb(51, 51, 51);
+}
+
+.github-header {
+    position: absolute;
+    font-weight: bold;
+    font-size: 13px;
+    bottom: -25px;
+    left: 18px;
+    color: rgb(51, 51, 51);
+}
+
+.tech-header {
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    top: -40px;
+    left: 22px;
+    color: rgb(51, 51, 51);
+}
+
