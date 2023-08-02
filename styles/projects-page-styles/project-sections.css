@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 50px;
     font-family: 'Heebo', sans-serif;
-    height: 100vh;
+    height: 115vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 80px;
     margin-bottom: 150px;
 }
 
