@@ -95,6 +95,10 @@
     background-color: white;
 }
 
+.features ul {
+    list-style-type: square;
+}
+
 .features ul li {
     margin-top: 5px;
     margin-bottom: 5px;
