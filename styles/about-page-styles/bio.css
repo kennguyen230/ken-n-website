@@ -1,29 +1,39 @@
 .bio-container {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-between;
-
-    margin-top: 8rem;
-    margin-bottom: 15rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    justify-content: space-evenly;
+    margin: 8rem 5rem 15rem;
+    /* gap: 10rem; */
 }
 
 .bio-content {
     display: flex;
-    align-items: start;
-    justify-content: center;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    gap: 3rem;
+}
+
+@media (min-width: 50em) {
+    .bio-content {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        width: 50%;
+        gap: 3rem;
+    }
 }
 
 .bio-pic-container {
     position: relative;
+    width: 100%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 50%;
 }
 
 .logo-container {
@@ -49,40 +59,39 @@
 .bio-title {
     font-size: 4.5rem;
     font-weight: bold;
-    /* width: 550px; */
-    /* width: 55rem; */
-    width: 100%;
+    width: 55rem;
     line-height: 5.5rem;
-    margin-bottom: 2rem;
+    padding: 0;
+    margin: 0;
 }
 
 .bio-description {
-    /* width: 500px; */
     width: 100%;
     line-height: 2.5rem;
-    margin-bottom: 2rem;
     font-size: 1.6rem;
     font-weight: 300;
 }
 
+.bio-description p {
+    padding: 0;
+    margin: 0;
+}
+
 .bio-pic {
-    width: 65%;
-    height: 44rem;
-    /* height: 100%; */
-    /* height: 335px; */
-    /* max-width: 100%; */
+    width: 100%;
+    max-width: 65%;
+    height: 40rem;
     object-fit: cover;
     border-radius: 45px;
     transform: rotate(3deg);
-    position: absolute;
+    position: relative;
     z-index: 2;
 }
 
 .bio-pic-bg {
-    width: 65%;
-    /* width: 35rem; */
-    height: 44rem;
-    /* max-width: 100%; */
+    width: 100%;
+    max-width: 65%;
+    height: 40rem;
     border-radius: 45px;
     background-color: rgb(148, 148, 148);
     position: absolute;
@@ -107,16 +116,21 @@
 }
 
 .resume {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-.resume a {
     text-decoration: none;
 }
 
+.resume-desc {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: color 0.15s;
+}
+
+.resume-desc:hover {
+    color: rgb(12, 153, 132);
+}
+
 .resume-opacity {
-    opacity: 0.85;    
+    opacity: 0.85;
     transition: opacity 0.15s;
 }
 
@@ -124,12 +138,21 @@
     opacity: 1;
 }
 
-.resume a span {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    transition: color 0.15s;
-}
+@media (min-width: 50em) {
+    .bio-container {
+        flex-direction: row;
+        margin: 8rem 5rem 15rem;
+    }
 
-.resume a span:hover {
-    color: rgb(12, 153, 132);
+    .bio-content {
+        width: 50%;
+    }
+
+    .bio-pic {
+        max-width: 65%;
+    }
+
+    .bio-pic-bg {
+        max-width: 65%;
+    }
 }
