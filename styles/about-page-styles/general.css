@@ -1,29 +1,44 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #FAFAFA;
     padding: 0;
     font-family: 'Heebo', sans-serif;
+    margin: 0;
+    position: relative;
 }
 
 .page-content {
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1200px;
+    padding: 5rem;
+    padding-top: 10rem;
     background-color: white;
-    padding: 50px;
-    padding-top: 100px;
     border-bottom: 1px solid grey;
-    font-family: 'Heebo', sans-serif;
 }
 
-p {
-    font-family: 'Heebo', sans-serif;
+.page-content::before {
+    left: 0;
+    z-index: 1;
 }
 
-a {
-    font-family: 'Heebo', sans-serif;
+.page-content::after {
+    right: 0;
+    z-index: 1;
 }
 
-html {
-    scroll-behavior: smooth;
+.page-content::before,
+.page-content::after {
+    background-color: #fafafa;
+    /* background-color: red; */
+    border: 1px solid #f4f4f5;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: calc(50% - 600px);
 }
 
 * {
