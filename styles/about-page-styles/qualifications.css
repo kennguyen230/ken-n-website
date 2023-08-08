@@ -1,38 +1,42 @@
 .about-me-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
-    justify-content: space-between;
+    gap: 3rem;
 }
 
-.work-container, .skills-container, .education-container {
-    border-style:solid;
+.work-edu-container, .skills-container {
+    width: 100%;
+}
+
+.work-box,
+.skills-box,
+.education-box {
+    border-style: solid;
     border-width: 2px;
     border-color: #f4f4f5;
     border-radius: 20px;
-    width: 42.5rem;
-    /* height: 200px; */
-    padding: 30px 30px 5px;
+    padding: 3rem 3rem .5rem;
 }
 
-.work-container {
-    /* height: 300px; */
+.work-box {
     margin-bottom: 3rem;
 }
 
-.skills-container {
-    /* height: 572px; */
-}
-
-.work-container p, .skills-container p, .education-container p {
+.work-box p,
+.skills-container p,
+.education-box p {
     display: inline-block;
     margin: 0;
     padding: 0;
 }
 
-.work-title, .skills-title, .education-title {
+.work-title,
+.skills-title,
+.education-title {
     display: flex;
     align-items: center;
     color: rgb(46, 46, 46);
@@ -40,7 +44,9 @@
     font-size: 1.6rem;
 }
 
-.work-title-icon, .skills-title-icon, .education-title-icon {
+.work-title-icon,
+.skills-title-icon,
+.education-title-icon {
     width: 2rem;
     margin-right: 1rem;
 }
@@ -74,7 +80,8 @@
     align-items: center;
 }
 
-.job-role, .job-timeline {
+.job-role,
+.job-timeline {
     color: rgb(148, 148, 148);
     font-size: 1.3rem;
 }
@@ -90,4 +97,10 @@
     font-size: 1.5rem;
     color: rgb(148, 148, 148);
     padding-left: 4rem;
+}
+
+@media (max-width:1050px) {
+    .about-me-container {
+        flex-direction: column;
+    }
 }
