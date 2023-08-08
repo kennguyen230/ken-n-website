@@ -104,3 +104,12 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 600px) {
+    .job-description {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+    }
+}

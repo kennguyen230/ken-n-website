@@ -131,7 +131,7 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 6rem;
     }
 
     .bio-pic-container {
@@ -139,30 +139,52 @@
     }
 
     .bio-pic {
-        width: 20rem;
+        width: 27rem;
         height: 27rem;
         border-radius: 37px;
     }
 
     .bio-pic-bg {
-        width: 20rem;
+        width: 27rem;
         height: 27rem;
         border-radius: 37px;
     }
 
+    .bio-title {
+        font-size: 5rem;
+        width: 100%;
+        line-height: 6rem;
+    }
+    
+    .bio-description {
+        width: 95%;
+        line-height: 3rem;
+        font-size: 1.6rem;
+    }
+
     .cat-tower {
-        position: absolute;
-        width: 9rem;
-        top: -7.5rem;
-        left: 30rem;
-        transform: rotate(8deg);
+        top: -6.9rem;
+        left: 45rem;
+        transform: rotate(0deg);
     }
     
     .sleep {
-        position: absolute;
-        width: 10rem;
-        top: -13rem;
-        left: 30rem;
-        transform: rotate(10deg);
+        top: -12.5rem;
+        left: 45rem;
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width:730px) {
+    .cat-tower {
+        top: -1.8rem;
+        left: 33.5rem;
+        transform: rotate(0deg);
+    }
+    
+    .sleep {
+        top: -7.25rem;
+        left: 33rem;
+        transform: rotate(0deg);
     }
 }

@@ -1,18 +1,16 @@
 footer {
     margin: 0 auto;
-    max-width: 63.2%;
+    width: min(90%, 111rem);
+    padding: 5rem;
     background-color: white;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     position: relative;
 }
 
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 40%;
-    margin-left: 10rem;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .footer-links {
