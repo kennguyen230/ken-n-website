@@ -4,11 +4,12 @@
     justify-content: center;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
     gap: 3rem;
 }
 
-.work-edu-container, .skills-container {
+.work-edu-container,
+.skills-container {
     width: 100%;
 }
 
@@ -99,6 +100,13 @@
     padding-left: 4rem;
 }
 
+@media (max-width: 1100px) {
+    .about-me-container {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
 @media (max-width:1050px) {
     .about-me-container {
         flex-direction: column;
@@ -107,9 +115,23 @@
 
 @media (max-width: 600px) {
     .job-description {
-        display: flex;
-        justify-content: space-between;
         align-items: start;
         flex-direction: column;
+    }
+
+    .about-me-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 423px) {
+    .job {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .about-me-container {
+        margin-bottom: 7rem;
     }
 }

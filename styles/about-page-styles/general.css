@@ -13,9 +13,7 @@ body {
 
 .page-content {
     margin: 0 auto;
-    width: min(90%, 111rem);
-    padding: 5rem;
-    padding-top: 10rem;
+    width: min(100%, 112rem);
     background-color: white;
     border-bottom: 2px solid rgb(163, 163, 163);
 }
