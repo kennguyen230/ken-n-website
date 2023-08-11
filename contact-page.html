@@ -49,7 +49,7 @@
 <body>
     <main>
         <div class="page-content">
-            
+
             <!-- Navigation bar -->
             <div class="nav-container">
                 <nav class="navbar">
@@ -69,43 +69,38 @@
             <div class="contact-container">
                 <img class="calico" src="resources/icons/animals/calicoicon.png">
                 <img class="tennis-ball" src="resources/icons/animals/tennisball.png">
+
                 <div class="bg-side divider"></div>
                 <div class="form-side">
                     <form id="contact-form" autocomplete="off" onsubmit="SendMail()">
                         <h3>Send a message</h3>
-                        <input class="name" type="text" id="name" placeholder="Name" autocomplete="off" required>
-                        <input class="email" type="email" id="email" placeholder="Email" required>
+                        <div class="name-email-box">
+                            <input class="name" type="text" id="name" placeholder="Name" required>
+                            <input class="email" type="email" id="email" placeholder="Email" required>
+                        </div>
                         <input class="subject" type="text" id="subject" placeholder="Subject" required>
                         <textarea id="message" rows="4" placeholder="Message" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
                     <div class="social-container">
                         <a class="link" href="https://www.linkedin.com/in/ken-nguyen-56bb2a218/" target="_blank">
-                            <div class="social-links">
-                                <div class="icon">
-                                    <img class="social" src="resources/icons/social-links/linkedin.svg">
-                                </div>
+                            <div class="icon">
+                                <img class="social" src="resources/icons/social-links/linkedin.svg">
                             </div>
                         </a>
                         <a class="link" href="https://github.com/kennguyen230" target="_blank">
-                            <div class="social-links">
-                                <div class="icon">
-                                    <img class="social" src="resources/icons/social-links/github.svg">
-                                </div>
+                            <div class="icon">
+                                <img class="social" src="resources/icons/social-links/github.svg">
                             </div>
                         </a>
                         <a class="link" href="https://www.instagram.com/kenscookingjournal/" target="_blank">
-                            <div class="social-links">
-                                <div class="icon">
-                                    <img class="social" src="resources/icons/social-links/instagram.svg">
-                                </div>
+                            <div class="icon">
+                                <img class="social" src="resources/icons/social-links/instagram.svg">
                             </div>
                         </a>
                         <a class="link" href="mailto: kenn.portfolio@gmail.com">
-                            <div class="social-links">
-                                <div class="icon">
-                                    <img class="social" src="resources/icons/social-links/envelope-solid.svg">
-                                </div>
+                            <div class="icon">
+                                <img class="social" src="resources/icons/social-links/envelope-solid.svg">
                             </div>
                         </a>
                     </div>
@@ -119,7 +114,7 @@
             <a class="footer-links" href="projects-page.html">Projects</a>
             <a class="footer-links" href="contact-page.html">Contact</a>
         </div>
-        <img class="sleeping-cat" src="resources/icons/grey-cat-snooze.png">
+        <img class="sleeping-cat" src="resources/icons/animals/grey-cat-snooze.png">
     </footer>
 </body>
 

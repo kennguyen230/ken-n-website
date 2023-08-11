@@ -1,7 +1,7 @@
 .title {
     font-size: 4.5rem;
     font-weight: bold;
-    width: 55rem;
+    width: 30%;
     color: rgb(51, 51, 51);
     line-height: 5.5rem;
     margin-left: 5rem;
@@ -11,28 +11,13 @@
 
 .desc {
     color: rgb(114, 114, 114);
-    width: 100%;
+    width: 78%;
     line-height: 2.5rem;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 1rem;
     font-size: 1.6rem;
     font-weight: 350;
-}
-
-.contact-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* width: 100rem; */
-    width: min(100rem, 100%);
-    height: 60rem;
-    box-shadow: -7px 10px 5px 0px rgba(0, 0, 0, 0.19);
-    border-radius: 1rem;
-
-    margin: 10rem 5rem;
-    position: relative;
 }
 
 .calico {
@@ -49,8 +34,22 @@
     top: -1.6rem;
 }
 
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 60rem;
+    box-shadow: -7px 10px 5px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+
+    margin: 10rem 5rem;
+    position: relative;
+}
+
 .bg-side {
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: #10769e;
     background: url("../../resources/images/mountain.jpg");
@@ -60,16 +59,27 @@
 }
 
 .form-side {
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: #FBD8C2;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
-    margin-top: 15%;
-    margin-left: 10%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 75%;
 }
 
 h3 {
@@ -77,10 +87,46 @@ h3 {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 1rem;
+    align-self: start;
 }
 
 *:focus {
     outline: none;
+}
+
+form .subject,
+form textarea {
+    width: 100%;
+    height: 3.2rem;
+    margin-bottom: 2%;
+    border: 2px solid rgba(248, 246, 247, 0.733);
+    border-radius: 4px;
+    transition: border 0.25s;
+    font-family: 'Heebo', sans-serif;
+}
+
+form textarea {
+    height: 80%;
+}
+
+form .name,
+form .email {
+    width: 100%;
+    height: 3.2rem;
+    margin-bottom: 2%;
+    border: 2px solid rgba(248, 246, 247, 0.733);
+    border-radius: 4px;
+    transition: border 0.25s;
+    font-family: 'Heebo', sans-serif;
+}
+
+.name-email-box {
+    width: 102%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
 }
 
 form .name:hover,
@@ -90,29 +136,10 @@ form textarea:hover {
     border: 2px solid rgb(218, 218, 218);
 }
 
-form .name, form .email, form .subject, form textarea {
-    width: 17.5rem;
-    height: 3.2rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    border: 2px solid rgba(248, 246, 246, 0.733);
-    border-radius: 4px;
-    transition: border 0.25s;
-}
-
-form .subject {
-    width: 37.1rem;
-}
-
-form textarea {
-    width: 37.2rem;
-    height: 225px;
-    font-family: 'Heebo', sans-serif;
-}
-
 form button {
+    align-self: start;
     width: 12.5rem;
-    height: 3.5rem;
+    height: 4rem;
     border: 0;
     border-radius: 8px;
     font-weight: bold;
@@ -124,4 +151,24 @@ form button {
 
 form button:hover {
     opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .bg-side {
+        display: none;
+    }
+
+    .contact-container {
+        width: 95%;
+        height: 60rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .form-side {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
 }
