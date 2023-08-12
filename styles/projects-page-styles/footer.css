@@ -1,34 +1,38 @@
 footer {
     margin: 0 auto;
-    max-width: 1200px;
+    width: min(100%, 112rem);
     background-color: white;
-    padding-top: 40px;
-    padding-bottom: 30px;
     position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 400px;
-    margin-left: 100px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .footer-links {
     text-decoration: none;
     color: rgb(97, 97, 97);
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .footer-links:hover {
     color: rgb(9, 121, 105);
 }
 
+.back-top-button {
+    text-decoration: none;
+    color: black;
+}
+
 .sleeping-cat {
     position: absolute;
-    width: 75px;
-    right: 0px;
-    bottom: 0px;
+    width: 7.5rem;
+    right: 0;
+    bottom: 0;
     cursor: pointer;
 }

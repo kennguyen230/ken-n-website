@@ -1,6 +1,6 @@
 .entire-project-layout {
     margin: 0 auto;
-    padding: 50px;
+    padding: 5rem;
     font-family: 'Heebo', sans-serif;
     height: 115vh;
     display: flex;
@@ -8,19 +8,20 @@
     align-items: center;
     justify-content: start;
     position: relative;
+    z-index: 10;
 }
 
 .project-section-title {
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: bold;
     color: rgb(51, 51, 51);
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .line {
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 7rem;
     width: 0;
 }
 
@@ -33,8 +34,8 @@
 }
 
 .GIF-card {
-    height: 600px;
-    width: 400px;
+    height: 60rem;
+    width: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,8 +44,8 @@
 }
 
 .bigger-GIF-card {
-    height: 550px;
-    width: 550px;
+    height: 55rem;
+    width: 55rem;
     display: flex;
     align-items: center;
     justify-content: center;
