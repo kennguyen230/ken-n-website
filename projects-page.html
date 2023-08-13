@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet" href="styles/projects-page-styles/general.css">
     <link rel="stylesheet" href="styles/projects-page-styles/navbar.css">
     <link rel="stylesheet" href="styles/projects-page-styles/intro-section.css">
@@ -26,6 +26,15 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/project-page.js" defer></script>
     <script defer src="https://kit.fontawesome.com/32f7030fe2.js" crossorigin="anonymous"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G26CL5Z1P7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-G26CL5Z1P7');
+    </script>
 </head>
 
 <body>
@@ -140,8 +149,8 @@
                         <div class="animate-gif">
                             <div class="bigger-GIF-card" data-tilt data-tilt-reset-to-start="true" data-tilt-startX="10"
                                 data-tilt-scale="1.1" data-tilt-reverse="true">
-                                <video src="resources/gifs/portfolio-demo.mp4" class="demo-video" autoplay loop
-                                    controls muted
+                                <video src="resources/gifs/portfolio-demo.mp4" class="demo-video" autoplay loop controls
+                                    muted
                                     onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();"></video>
                             </div>
                         </div>
@@ -150,10 +159,11 @@
                         <div class="animate-info">
                             <!-- Parent box holds the tech stack column, github link, features & goals tabs -->
                             <div class="parent-box">
+
                                 <div class="tech-github-flex-box">
                                     <div class="tech" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
-                                        data-tilt-reverse="true">
-                                        <span class="tech-header">Tech<br>Stack</span>
+                                    data-tilt-reverse="true">
+                                        <span class="tech-header">Tech Stack</span>
                                         <div class="tech-stack-icons-box">
                                             <i class="fa-brands fa-html5 fa-2xl" style="color: #ffb54d;"></i>
                                             <span class="tech-stack-name ">HTML</span>
@@ -164,19 +174,20 @@
                                         </div>
                                         <div class="tech-stack-icons-box">
                                             <i class="fa-brands fa-js fa-2xl" style="color: #dee114;"></i>
-                                            <span class="tech-stack-name ">JS</span>
+                                            <span class="tech-stack-name ">Javascript</span>
                                         </div>
                                     </div>
                                     <a href="https://github.com/kennguyen230/ken-n-website" target="_blank">
                                         <div class="github" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
-                                            data-tilt-reverse="true">
+                                        data-tilt-reverse="true">
                                             <img src="resources/icons/social-links/github.svg" class="github-icon">
                                             <span class="github-header">Github</span>
                                         </div>
                                     </a>
                                 </div>
+
                                 <div class="features-goals-flex-box" data-tilt data-tilt-reset-to-start="true"
-                                    data-tilt-startX="-10" data-tilt-scale="1.25" data-tilt-reverse="true">
+                                data-tilt-startX="-10" data-tilt-scale="1.25" data-tilt-reverse="true">
                                     <div class="features">
                                         <span class="info-header">Features</span>
                                         <ul>
@@ -220,12 +231,14 @@
                                     onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();"></video>
                             </div>
                         </div>
+
                         <div class="animate-info">
                             <div class="parent-box">
+
                                 <div class="tech-github-flex-box">
                                     <div class="tech" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
                                         data-tilt-reverse="true">
-                                        <span class="tech-header">Tech<br>Stack</span>
+                                        <span class="tech-header">Tech Stack</span>
                                         <div class="tech-stack-icons-box">
                                             <i class="fa-brands fa-html5 fa-2xl" style="color: #ffb54d;"></i>
                                             <span class="tech-stack-name ">HTML</span>
@@ -243,6 +256,7 @@
                                         </div>
                                     </a>
                                 </div>
+
                                 <div class="features-goals-flex-box" data-tilt data-tilt-reset-to-start="true"
                                     data-tilt-startX="-10" data-tilt-scale="1.25" data-tilt-reverse="true">
                                     <div class="features">
@@ -290,9 +304,9 @@
                         <div class="animate-info">
                             <div class="parent-box">
                                 <div class="tech-github-flex-box">
-                                    <div class="tech" style="height: 240px;" data-tilt data-tilt-scale="1.1"
+                                    <div class="tech" style="gap:1.5rem;" data-tilt data-tilt-scale="1.1"
                                         data-tilt-startX="-10" data-tilt-reverse="true">
-                                        <span class="tech-header">Tech<br>Stack</span>
+                                        <span class="tech-header">Tech Stack</span>
                                         <div class="tech-stack-icons-box">
                                             <i class="fa-brands fa-java fa-2xl" style="color: #e49c21;"></i>
                                             <span class="tech-stack-name">Java</span>
@@ -334,8 +348,10 @@
                                         creating a large project. This meant making use of Agile practices in order to
                                         break users stories down to bite sized tasks, assigning time frames for those
                                         tasks, and maintaining a burndown chart. And consequently, we were expected to
-                                        make deadlines based on 2-week sprints over the course of 8 weeks. <br><br>The second
-                                        aim of the project was to familiarize ourselves with software engineering
+                                        make deadlines based on 2-week sprints over the course of 8 weeks.
+                                        <br><br>
+                                        The second aim of the project was to familiarize ourselves with software
+                                        engineering
                                         principles like SOLID, SRP, and DRY. And the last objective was to make sure our
                                         project was well tested using unit and integration tests.
                                     </div>
@@ -364,9 +380,9 @@
                         <div class="animate-info">
                             <div class="parent-box">
                                 <div class="tech-github-flex-box">
-                                    <div class="tech" style="height: 240px;" data-tilt data-tilt-scale="1.1"
+                                    <div class="tech" data-tilt data-tilt-scale="1.1"
                                         data-tilt-startX="-10" data-tilt-reverse="true">
-                                        <span class="tech-header">Tech<br>Stack</span>
+                                        <span class="tech-header">Tech Stack</span>
                                         <div class="tech-stack-icons-box">
                                             <i class="fa-brands fa-swift fa-2xl" style="color: #ff9838;"></i>
                                             <span class="tech-stack-name">Swift</span>
@@ -435,9 +451,9 @@
                         <div class="animate-info">
                             <div class="parent-box">
                                 <div class="tech-github-flex-box">
-                                    <div class="tech" data-tilt data-tilt-scale="1.1"
-                                        data-tilt-startX="-10" data-tilt-reverse="true">
-                                        <span class="tech-header">Tech<br>Stack</span>
+                                    <div class="tech" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
+                                        data-tilt-reverse="true">
+                                        <span class="tech-header">Tech Stack</span>
                                         <div class="tech-stack-icons-box">
                                             <i class="fa-regular fa-c fa-2xl" style="color: #4c77c2;"></i>
                                             <span class="tech-stack-name">C++</span>
