@@ -148,4 +148,9 @@
     line-height: 1.65rem;
 }
 
-@media (max-width: 1250px) {}
+@media (max-width: 350px) {
+    .parent-box {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}

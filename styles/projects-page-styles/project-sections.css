@@ -17,6 +17,7 @@
     color: rgb(51, 51, 51);
     margin-bottom: 3rem;
     margin-top: 3rem;
+    text-align: center;
 }
 
 .line {
@@ -60,23 +61,57 @@
     border-radius: 30px;
 }
 
-/* @media (max-width: 1250px) {
+@media (max-width: 1050px) {
+    .bigger-GIF-card {
+        height: 50rem;
+        width: 50rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .GIF-card {
+        height: 50rem;
+        width: 30rem;
+    }
+
+    .bigger-GIF-card {
+        height: 50rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width: 700px) {
     .entire-project-layout {
-        margin: 0 auto;
-        padding: 5rem;
-        font-family: 'Heebo', sans-serif;
         height: 200vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        position: relative;
-        z-index: 10;
     }
 
     .gif-info-section {
         flex-direction: column;
+        gap: 10rem;
     }
-} */
+
+    .bigger-GIF-card {
+        height: 50rem;
+        width: 50rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .entire-project-layout {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .bigger-GIF-card {
+        height: 50rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .entire-project-layout {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
 
 
