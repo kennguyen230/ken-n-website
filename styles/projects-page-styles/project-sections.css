@@ -18,12 +18,18 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
     text-align: center;
+    opacity: 0;
 }
 
 .line {
     padding: 0;
     margin-bottom: 7rem;
     width: 0;
+}
+
+.animate-gif,
+.animate-info {
+    opacity: 0;
 }
 
 .gif-info-section {
@@ -57,7 +63,7 @@
 .demo-video {
     width: 100%;
     height: 100%;
-    object-fit:fill;
+    object-fit: fill;
     border-radius: 30px;
 }
 
@@ -101,12 +107,9 @@
         margin-left: 5rem;
         margin-right: 5rem;
     }
+
     .bigger-GIF-card {
         height: 50rem;
         width: 30rem;
     }
 }
-
-
-
-

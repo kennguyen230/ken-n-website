@@ -7,16 +7,14 @@ function handleSectionAnimation(entries, observer) {
         const gifElement = entry.target.querySelector(".animate-gif");
         const infoElement = entry.target.querySelector(".animate-info");
 
-        let gifCard = document.querySelector(".GIF-card")
-        let bigGifCard = document.querySelector(".bigger-GIF-card")
-        let goalsAndFeatures = document.querySelector(".features-goals-flex-box")
+        // let gifCard = document.querySelector(".GIF-card")
+        // let bigGifCard = document.querySelector(".bigger-GIF-card")
+        // let goalsAndFeatures = document.querySelector(".features-goals-flex-box")
 
         // console.log(viewportSize);
         if (viewportSize.matches) {
-            gifCard.removeAttribute("data-tilt-startX")
-            bigGifCard.removeAttribute("data-tilt-startX")
-            goalsAndFeatures.removeAttribute("data-tilt-startX")
-            
+            // base(gifCard, bigGifCard, goalsAndFeatures)
+
             if (entry.isIntersecting) {
                 titleElement.classList.add("fadeInTop");
                 lineElement.classList.add("animate-line");
@@ -44,21 +42,43 @@ function handleSectionAnimation(entries, observer) {
     })
 }
 
-const portfolioObserver = new IntersectionObserver(handleSectionAnimation);
-portfolioObserver.observe(document.querySelector("#portfolio-section"));
+// function base(gifCard, bigGifCard, goalsAndFeatures) {
+//     console.log("base")
+//     removeMove(gifCard, bigGifCard, goalsAndFeatures)
+//     removeTilt(gifCard, bigGifCard, goalsAndFeatures)
+//     removeTilt(gifCard, bigGifCard, goalsAndFeatures)
+//     removeMove(gifCard, bigGifCard, goalsAndFeatures)
+// }
 
-const youtubeObserver = new IntersectionObserver(handleSectionAnimation);
-youtubeObserver.observe(document.querySelector("#youtube-section"));
+// function removeTilt(gifCard, bigGifCard, goalsAndFeatures) {
+//     console.log("Remove tilt")
+//     gifCard.vanillaTilt.destroy()
+//     bigGifCard.vanillaTilt.destroy()
+//     goalsAndFeatures.vanillaTilt.destroy()
+// }
 
-const sdzooObserver = new IntersectionObserver(handleSectionAnimation);
-sdzooObserver.observe(document.querySelector("#sdzoo-section"));
+// function removeMove(gifCard, bigGifCard, goalsAndFeatures) {
+//     console.log("Remove move")
+//     VanillaTilt.init(gifCard)
+//     VanillaTilt.init(bigGifCard)
+//     VanillaTilt.init(goalsAndFeatures)
 
-const codeBrownObserver = new IntersectionObserver(handleSectionAnimation);
-sdzooObserver.observe(document.querySelector("#codebrown-section"));
+//     gifCard.removeAttribute("data-tilt-startX")
+//     bigGifCard.removeAttribute("data-tilt-startX")
+//     goalsAndFeatures.removeAttribute("data-tilt-startX")
+// }
 
-const tunnelmanObserver = new IntersectionObserver(handleSectionAnimation);
-tunnelmanObserver.observe(document.querySelector("#tunnelman-section"));
+const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -685px 0px"
+};
 
+const sectionObserver = new IntersectionObserver(handleSectionAnimation, appearOptions);
+sectionObserver.observe(document.querySelector("#portfolio-section"));
+sectionObserver.observe(document.querySelector("#youtube-section"));
+sectionObserver.observe(document.querySelector("#sdzoo-section"));
+sectionObserver.observe(document.querySelector("#codebrown-section"));
+sectionObserver.observe(document.querySelector("#tunnelman-section"));
 
 // Back to top button
 const toTop = document.querySelector(".to-top");

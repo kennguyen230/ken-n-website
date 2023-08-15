@@ -1,9 +1,15 @@
+/* p {
+    margin:0;
+    padding: 0;
+    display:block;
+} */
+
 .intro-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    margin: 10rem 5rem 10rem 5rem;
+    margin: 10rem 5rem;
 }
 
 .intro-title {
@@ -22,5 +28,19 @@
     font-weight: 350;
 }
 
+@media (max-width: 600px) {
+    .intro-container {
+        flex-direction: column;
+        margin: 10rem 2rem;
+    }
 
+    .intro-title {
+        width: 100%;
+    }
+
+    .intro-description {
+        width: 100%;
+
+    }
+}
 
