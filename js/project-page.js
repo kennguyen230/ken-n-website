@@ -70,7 +70,7 @@ function handleSectionAnimation(entries, observer) {
 
 const appearOptions = {
     threshold: 0,
-    rootMargin: "0px 0px -685px 0px"
+    rootMargin: "0px 0px -600px 0px"
 };
 
 const sectionObserver = new IntersectionObserver(handleSectionAnimation, appearOptions);
