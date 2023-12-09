@@ -32,9 +32,9 @@
 .cat-tower {
     position: absolute;
     width: 9rem;
-    top: -7.5rem;
-    left: 0rem;
-    transform: rotate(8deg);
+    top: -8rem;
+    left: 1rem;
+    transform: rotate(-8deg);
 }
 
 .sleep {
