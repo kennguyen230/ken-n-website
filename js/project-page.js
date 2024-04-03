@@ -7,13 +7,7 @@ function handleSectionAnimation(entries, observer) {
         const gifElement = entry.target.querySelector(".animate-gif");
         const infoElement = entry.target.querySelector(".animate-info");
 
-        // let gifCard = document.querySelector(".GIF-card")
-        // let bigGifCard = document.querySelector(".bigger-GIF-card")
-        // let goalsAndFeatures = document.querySelector(".features-goals-flex-box")
-
-        // console.log(viewportSize);
         if (viewportSize.matches) {
-            // base(gifCard, bigGifCard, goalsAndFeatures)
 
             if (entry.isIntersecting) {
                 titleElement.classList.add("fadeInTop");
@@ -74,6 +68,7 @@ const appearOptions = {
 };
 
 const sectionObserver = new IntersectionObserver(handleSectionAnimation, appearOptions);
+sectionObserver.observe(document.querySelector("#leaguenem-section"));
 sectionObserver.observe(document.querySelector("#portfolio-section"));
 sectionObserver.observe(document.querySelector("#youtube-section"));
 sectionObserver.observe(document.querySelector("#sdzoo-section"));

@@ -65,8 +65,21 @@
 
             <!-- Projects -->
             <div class="projects-container">
+                <a class="project" href="projects-page.html#leaguenem-section">
+                    <img class="project-icon project-icon-rounded"
+                        src="resources/icons/project-icons/leaguenemesis.png">
+                    <div class="project-title title-color">
+                        League Nemesis
+                    </div>
+                    <div class="project-description desc-color">
+                        A full-stack React app displaying a user's League Nemesis.
+                    </div>
+                    <div class="project-link title-color">
+                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
+                        Learn more
+                    </div>
+                </a>
                 <a class="project" href="projects-page.html#portfolio-section">
-                    <!-- TODO: Change project icon -->
                     <img class="project-icon" src="resources/icons/animals/calicoicon.png">
                     <div class="project-title title-color">
                         Personal Portfolio
@@ -136,6 +149,88 @@
             <hr>
 
             <!-- Project sections -->
+            <section id="leaguenem-section">
+                <!-- For the vertical layout of title, line, gif, and info -->
+                <div class="entire-project-layout">
+                    <div class="project-section-title">League Nemesis</div>
+                    <hr id="project-section-line" class="line">
+
+                    <!-- For the horizontal layout of gif and info -->
+                    <div class="gif-info-section">
+                        <!-- Gif side -->
+                        <div class="animate-gif">
+                            <div class="bigger-GIF-card" data-tilt data-tilt-reset-to-start="true" data-tilt-startX="10"
+                                data-tilt-scale="1.1" data-tilt-reverse="true">
+                                <p style="font-size: 3.5rem">WIP</p>
+                            </div>
+                        </div>
+
+                        <!-- Info side -->
+                        <div class="animate-info">
+                            <!-- Parent box holds the tech stack column, github link, features & goals tabs -->
+                            <div class="parent-box">
+
+                                <div class="tech-github-flex-box">
+                                    <div class="tech tech-ln" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
+                                        data-tilt-reverse="true">
+                                        <span class="tech-header tech-header-ln">Tech Stack</span>
+                                        <div class="tech-stack-icons-box">
+                                            <i class="fa-brands fa-react fa-2xl" style="color: #6fdffb;"></i>
+                                            <span class="tech-stack-name ">React</span>
+                                        </div>
+                                        <div class="tech-stack-icons-box">
+                                            <i class="fa-solid fa-leaf fa-2xl" style="color: #0a5700;"></i>
+                                            <span class="tech-stack-name ">MongoDB</span>
+                                        </div>
+                                        <div class="tech-stack-icons-box">
+                                            <i class="fa-brands fa-node fa-2xl" style="color: #66e586;"></i>
+                                            <span class="tech-stack-name ">Node.js</span>
+                                        </div>
+                                        <div class="tech-stack-icons-box">
+                                            <i class="fa-brands fa-square-js fa-2xl" style="color: #ecc14b;"></i>
+                                            <span class="tech-stack-name ">Express.js</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/kennguyen230/League-Nemesis" target="_blank">
+                                        <div class="github" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
+                                            data-tilt-reverse="true">
+                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
+                                            <span class="github-header">Github</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="features-goals-flex-box" data-tilt data-tilt-reset-to-start="true"
+                                    data-tilt-startX="-10" data-tilt-scale="1.25" data-tilt-reverse="true">
+                                    <div class="features">
+                                        <span class="info-header">Features</span>
+                                        <ul>
+                                            <li>Storage and caching of data using Mongoose and MongoDB</li>
+                                            <li>Shieldbow.js used as a Riot Games API wrapper for simplified data
+                                                fetching</li>
+                                            <li>Express.js used as a backend framework for creating routes</li>
+                                            <li>Node.js used for server side development</li>
+                                            <li>Endpoints were tested using Postman</li>
+                                            <li>MaterialUI used as a component library</li>
+                                        </ul>
+                                    </div>
+                                    <div class="goals">
+                                        <span class="info-header">Goal</span>
+                                        A React app showing a user their League Nemesis. Based off the game League of
+                                        Legends, a user's League Nemesis is the champion they have the weighted worst
+                                        loss percentage against. The website keeps track of a user's League Nemesis per
+                                        lane, per game type (normals vs ranked vs ARAM), and per season. As well, it
+                                        will offer advice on how to play better against their nemesis.
+                                        <br><br>
+                                        The goal of this project was to ship a reliable and robust full-stack product
+                                        using the MERN stack.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
             <section id="portfolio-section">
                 <!-- For the vertical layout of title, line, gif, and info -->
                 <div class="entire-project-layout">

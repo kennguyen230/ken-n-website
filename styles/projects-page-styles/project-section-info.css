@@ -1,156 +1,164 @@
 .parent-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* width: 100%; */
-    gap: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 100%; */
+  gap: 4rem;
 }
 
 .features-goals-flex-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    padding: 0;
-    margin: 0;
-    max-width: 40rem;
-    z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0;
+  margin: 0;
+  max-width: 40rem;
+  z-index: 10;
 }
 
 .tech-github-flex-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .tech {
-    height: 5rem;
-    width: 18rem;
-    border-radius: 2.5rem;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  height: 5rem;
+  width: 18rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    position: relative;
-    padding-top: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  padding-top: 0.7rem;
 
-    background-color: white;
+  background-color: white;
+}
+
+.tech-ln {
+  width: 28rem;
 }
 
 .tech-stack-icons-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .tech-stack-name {
-    font-size: 1.2rem;
-    color: rgb(148, 148, 148);
+  font-size: 1.2rem;
+  color: rgb(148, 148, 148);
 }
 
 .github {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 6rem;
-    height: 6rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
 
-    transition: all .15s;
-    position: relative;
+  transition: all 0.15s;
+  position: relative;
 
-    background-color: white;
+  background-color: white;
 }
 
 .github:hover {
-    transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .github-icon {
-    width: 2.5rem;
+  width: 2.5rem;
 }
 
 .features {
-    width: 120%;
-    border-radius: 2.5rem;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
-    padding: 1.5rem;
-    position: relative;
-    background-color: white;
+  width: 120%;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+  position: relative;
+  background-color: white;
 }
 
 .features ul {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .features ul li {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    font-size: 1.25rem;
-    color: rgb(114, 114, 114);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: rgb(114, 114, 114);
 }
 
 .goals {
-    /* width: 45rem; */
-    width: 120%;
+  /* width: 45rem; */
+  width: 120%;
 
-    line-height: 2.5rem;
-    font-size: 1.25rem;
-    color: rgb(114, 114, 114);
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+  color: rgb(114, 114, 114);
 
-    padding: 1.5rem;
+  padding: 1.5rem;
 
-    border-radius: 2.5rem;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  border-radius: 2.5rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
 
-    position: relative;
+  position: relative;
 
-    background-color: white;
+  background-color: white;
 }
 
 .info-header {
-    position: absolute;
-    font-weight: bold;
-    font-size: 1.3rem;
-    top: -2.8rem;
-    left: 1.2rem;
-    color: rgb(51, 51, 51);
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.3rem;
+  top: -2.8rem;
+  left: 1.2rem;
+  color: rgb(51, 51, 51);
 }
 
 .github-header {
-    position: absolute;
-    font-weight: bold;
-    font-size: 1.3rem;
-    bottom: -2.5rem;
-    top: -2.35rem;
-    left: 1.1rem;
-    color: rgb(51, 51, 51);
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.3rem;
+  bottom: -2.5rem;
+  top: -2.35rem;
+  left: 1.1rem;
+  color: rgb(51, 51, 51);
 }
 
 .tech-header {
-    position: absolute;
-    font-weight: bold;
-    font-size: 1.3rem;
-    top: -2.25rem;
-    left: 6rem;
-    color: rgb(51, 51, 51);
-    line-height: 1.65rem;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.3rem;
+  top: -2.25rem;
+  left: 6rem;
+  color: rgb(51, 51, 51);
+  line-height: 1.65rem;
+}
+
+.tech-header-ln {
+  left: 11rem;
 }
 
 @media (max-width: 400px) {
-    .features,
-    .goals {
-        width: 100%;
-    }
+  .features,
+  .goals {
+    width: 100%;
+  }
 }
