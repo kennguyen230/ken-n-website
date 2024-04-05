@@ -67,8 +67,8 @@
 }
 
 .bio-pic {
-  width: 33rem;
-  height: 33rem;
+  width: 36rem;
+  height: 36rem;
   object-fit: cover;
   border-radius: 45px;
   transform: rotate(3deg);
@@ -77,8 +77,8 @@
 }
 
 .bio-pic-bg {
-  width: 33rem;
-  height: 33rem;
+  width: 36rem;
+  height: 36rem;
   border-radius: 45px;
   background-color: rgb(148, 148, 148);
   position: absolute;
