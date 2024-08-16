@@ -79,6 +79,19 @@
                         Learn more
                     </div>
                 </a>
+                <a class="project" href="projects-page.html#gfday-section">
+                    <img class="project-icon" src="resources/icons/project-icons/pinkflower.png">
+                    <div class="project-title title-color">
+                        GF Day
+                    </div>
+                    <div class="project-description desc-color">
+                        A website for my girlfriend for National GF Day that shows our photos over the years.
+                    </div>
+                    <div class="project-link title-color">
+                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
+                        Learn more
+                    </div>
+                </a>
                 <a class="project" href="projects-page.html#portfolio-section">
                     <img class="project-icon" src="resources/icons/animals/calicoicon.png">
                     <div class="project-title title-color">
@@ -86,19 +99,6 @@
                     </div>
                     <div class="project-description desc-color">
                         A website for the purposes of showcasing projects, skills, education, and work history.
-                    </div>
-                    <div class="project-link title-color">
-                        <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
-                        Learn more
-                    </div>
-                </a>
-                <a class="project" href="projects-page.html#youtube-section">
-                    <img class="project-icon" src="resources/icons/project-icons/youtubeicon.png">
-                    <div class="project-title title-color">
-                        Youtube Homepage Recreation
-                    </div>
-                    <div class="project-description desc-color">
-                        A recreation of the Youtube front page using HTML and CSS.
                     </div>
                     <div class="project-link title-color">
                         <img class="project-link-icon" src="resources/icons/project-icons/link-icon.svg">
@@ -233,6 +233,80 @@
                     </div>
             </section>
 
+            <section id="gfday-section">
+                <!-- For the vertical layout of title, line, gif, and info -->
+                <div class="entire-project-layout">
+                    <div class="project-section-title">GF Day</div>
+                    <hr id="project-section-line" class="line">
+
+                    <!-- For the horizontal layout of gif and info -->
+                    <div class="gif-info-section">
+                        <div class="animate-gif">
+                            <div class="bigger-GIF-card" data-tilt data-tilt-reset-to-start="true" data-tilt-startX="10"
+                                data-tilt-scale="1.1" data-tilt-reverse="true">
+                                <video src="resources/gifs/youtube-demo.mp4" class="demo-video" autoplay loop controls
+                                    muted
+                                    onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();"></video>
+                            </div>
+                        </div>
+
+                        <div class="animate-info">
+                            <div class="parent-box">
+
+                                <div class="tech-github-flex-box">
+                                    <div class="tech" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
+                                        data-tilt-reverse="true">
+                                        <span class="tech-header">Tech Stack</span>
+                                        <div class="tech-stack-icons-box">
+                                            <i class="fa-brands fa-react fa-2xl" style="color: #6fdffb;"></i>
+                                            <span class="tech-stack-name ">React</span>
+                                        </div>
+                                        <div class="tech-stack-icons-box">
+                                            <i class="fa-brands fa-square-js fa-2xl" style="color: #ecc14b;"></i>
+                                            <span class="tech-stack-name ">Typescript</span>
+                                        </div>
+                                        <div class="tech-stack-icons-box">
+                                            <i class="fa-brands fa-css3-alt fa-2xl" style="color: #2675fd;"></i>
+                                            <span class="tech-stack-name ">Tailwind</span>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/kennguyen230/my-youtube" target="_blank">
+                                        <div class="github" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
+                                            data-tilt-reverse="true">
+                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
+                                            <span class="github-header">Github</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="features-goals-flex-box" data-tilt data-tilt-reset-to-start="true"
+                                    data-tilt-startX="-10" data-tilt-scale="1.25" data-tilt-reverse="true">
+                                    <div class="features">
+                                        <span class="info-header">Features</span>
+                                        <ul>
+                                            <li>Fully responsive website suitable for mobile and desktop</li>
+                                            <li>Sticky resizing header with tooltips on each button</li>
+                                            <li>Videos grid</li>
+                                            <li>Videos with thumbnails, titles, views, post date, and working video link
+                                            </li>
+                                            <li>Channel summary tooltip upon hover</li>
+                                            <li>Sticky sidebar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="goals">
+                                        <span class="info-header">Goal</span>
+                                        The goal was to create a project that worked well on all devices. This project
+                                        allowed for an opportunity to try out new HTML and CSS features and refine
+                                        preexisting knowledge. I chose a platform that was widely familiar to everyone
+                                        so that demonstrations would be straightforward and the bar for “nailing it”
+                                        would be clear.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
             <section id="portfolio-section">
                 <!-- For the vertical layout of title, line, gif, and info -->
                 <div class="entire-project-layout">
@@ -304,76 +378,6 @@
                                         and responsive website packaged into a pleasant design that teeters between
                                         simplicity and character. It was important to include a contacts page for any
                                         business inquiries and feedback on the website.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
-            <section id="youtube-section">
-                <!-- For the vertical layout of title, line, gif, and info -->
-                <div class="entire-project-layout">
-                    <div class="project-section-title">Youtube Homepage Clone</div>
-                    <hr id="project-section-line" class="line">
-
-                    <!-- For the horizontal layout of gif and info -->
-                    <div class="gif-info-section">
-                        <div class="animate-gif">
-                            <div class="bigger-GIF-card" data-tilt data-tilt-reset-to-start="true" data-tilt-startX="10"
-                                data-tilt-scale="1.1" data-tilt-reverse="true">
-                                <video src="resources/gifs/youtube-demo.mp4" class="demo-video" autoplay loop controls
-                                    muted
-                                    onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();"></video>
-                            </div>
-                        </div>
-
-                        <div class="animate-info">
-                            <div class="parent-box">
-
-                                <div class="tech-github-flex-box">
-                                    <div class="tech" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
-                                        data-tilt-reverse="true">
-                                        <span class="tech-header">Tech Stack</span>
-                                        <div class="tech-stack-icons-box">
-                                            <i class="fa-brands fa-html5 fa-2xl" style="color: #ffb54d;"></i>
-                                            <span class="tech-stack-name ">HTML</span>
-                                        </div>
-                                        <div class="tech-stack-icons-box">
-                                            <i class="fa-brands fa-css3-alt fa-2xl" style="color: #2675fd;"></i>
-                                            <span class="tech-stack-name ">CSS</span>
-                                        </div>
-                                    </div>
-                                    <a href="https://github.com/kennguyen230/my-youtube" target="_blank">
-                                        <div class="github" data-tilt data-tilt-scale="1.1" data-tilt-startX="-10"
-                                            data-tilt-reverse="true">
-                                            <img src="resources/icons/social-links/github.svg" class="github-icon">
-                                            <span class="github-header">Github</span>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="features-goals-flex-box" data-tilt data-tilt-reset-to-start="true"
-                                    data-tilt-startX="-10" data-tilt-scale="1.25" data-tilt-reverse="true">
-                                    <div class="features">
-                                        <span class="info-header">Features</span>
-                                        <ul>
-                                            <li>Fully responsive website suitable for mobile and desktop</li>
-                                            <li>Sticky resizing header with tooltips on each button</li>
-                                            <li>Videos grid</li>
-                                            <li>Videos with thumbnails, titles, views, post date, and working video link
-                                            </li>
-                                            <li>Channel summary tooltip upon hover</li>
-                                            <li>Sticky sidebar</li>
-                                        </ul>
-                                    </div>
-                                    <div class="goals">
-                                        <span class="info-header">Goal</span>
-                                        The goal was to create a project that worked well on all devices. This project
-                                        allowed for an opportunity to try out new HTML and CSS features and refine
-                                        preexisting knowledge. I chose a platform that was widely familiar to everyone
-                                        so that demonstrations would be straightforward and the bar for “nailing it”
-                                        would be clear.
                                     </div>
                                 </div>
                             </div>

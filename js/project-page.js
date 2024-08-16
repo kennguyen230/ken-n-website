@@ -36,32 +36,6 @@ function handleSectionAnimation(entries, observer) {
     })
 }
 
-// function base(gifCard, bigGifCard, goalsAndFeatures) {
-//     console.log("base")
-//     removeMove(gifCard, bigGifCard, goalsAndFeatures)
-//     removeTilt(gifCard, bigGifCard, goalsAndFeatures)
-//     removeTilt(gifCard, bigGifCard, goalsAndFeatures)
-//     removeMove(gifCard, bigGifCard, goalsAndFeatures)
-// }
-
-// function removeTilt(gifCard, bigGifCard, goalsAndFeatures) {
-//     console.log("Remove tilt")
-//     gifCard.vanillaTilt.destroy()
-//     bigGifCard.vanillaTilt.destroy()
-//     goalsAndFeatures.vanillaTilt.destroy()
-// }
-
-// function removeMove(gifCard, bigGifCard, goalsAndFeatures) {
-//     console.log("Remove move")
-//     VanillaTilt.init(gifCard)
-//     VanillaTilt.init(bigGifCard)
-//     VanillaTilt.init(goalsAndFeatures)
-
-//     gifCard.removeAttribute("data-tilt-startX")
-//     bigGifCard.removeAttribute("data-tilt-startX")
-//     goalsAndFeatures.removeAttribute("data-tilt-startX")
-// }
-
 const appearOptions = {
     threshold: 0,
     rootMargin: "0px 0px -600px 0px"
@@ -70,7 +44,7 @@ const appearOptions = {
 const sectionObserver = new IntersectionObserver(handleSectionAnimation, appearOptions);
 sectionObserver.observe(document.querySelector("#leaguenem-section"));
 sectionObserver.observe(document.querySelector("#portfolio-section"));
-sectionObserver.observe(document.querySelector("#youtube-section"));
+sectionObserver.observe(document.querySelector("#gfday-section"));
 sectionObserver.observe(document.querySelector("#sdzoo-section"));
 sectionObserver.observe(document.querySelector("#codebrown-section"));
 sectionObserver.observe(document.querySelector("#tunnelman-section"));
