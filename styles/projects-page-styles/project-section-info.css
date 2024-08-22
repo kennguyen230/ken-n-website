@@ -48,6 +48,10 @@
   width: 28rem;
 }
 
+.tech-gf {
+  width: 20rem;
+}
+
 .tech-stack-icons-box {
   display: flex;
   flex-direction: column;
@@ -154,6 +158,10 @@
 
 .tech-header-ln {
   left: 11rem;
+}
+
+.tech-header-gf {
+  left: 7rem;
 }
 
 @media (max-width: 400px) {
